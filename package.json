@@ -12,6 +12,10 @@
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
+    "@humanwhocodes/config-array": "^0.13.0",
+    "@humanwhocodes/object-schema": "^2.0.3",
+    "glob": "^13.0.0",
+    "inflight": "^1.0.6",
     "lucide-react": "^0.263.1",
     "next": "^14.1.0",
     "next-seo": "^6.4.0",
@@ -20,12 +24,13 @@
     "react-dom": "^18.2.0",
     "react-ga4": "^2.1.0",
     "react-icons": "^5.5.0",
+    "rimraf": "^6.1.2",
     "swiper": "^11.2.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.1.0",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.4",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0"
   },
