@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Block access to sensitive areas
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: *.json$
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /groups
+Allow: /events
+Allow: /services
+Allow: /resources
+Allow: /contact
+
+# Sitemap location
+Sitemap: https://eloloagbleke.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
