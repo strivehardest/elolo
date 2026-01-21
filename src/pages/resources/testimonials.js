@@ -1,4 +1,5 @@
-import React from "react";
+
+import SEOHead from '../../components/seo/SEOHead';
 
 const testimonials = [
   {
