@@ -249,8 +249,8 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10 bg-gray-900/50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
-          <div className="flex flex-col items-center justify-center gap-1 text-sm text-gray-300">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-3">
+          <div className="flex flex-col items-center justify-center gap-0 text-xs text-gray-400">
             <div className="text-center w-full">
               <span className="font-medium text-white">
                 © 2026 Elolo Agbleke
@@ -258,7 +258,7 @@ export default function Footer() {
               <span className="mx-1">•</span>
               <span>All Rights Reserved</span>
             </div>
-            <div className="text-center w-full mt-1">
+            <div className="text-center w-full mt-0.5">
               <span className="font-semibold">Developed and Designed by </span>
               <Link
                 href="https://www.celestialwebsolutions.net"
