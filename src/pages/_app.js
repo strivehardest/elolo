@@ -11,6 +11,31 @@ import '../styles/globals.css';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
+
+  // Initialize Google Analytics once on mount
+  useEffect(() => {
+    if (process.env.NEXT_PUBLIC_GA_ID) {
+      initGA();
+    }
+  }, []);
+
+  // Log page views on route change
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      if (process.env.NEXT_PUBLIC_GA_ID) {
+        logPageView(url);
+      }
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    // Log initial page load
+    if (process.env.NEXT_PUBLIC_GA_ID) {
+      logPageView(window.location.pathname);
+    }
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <>
       {/* Favicon and SEO */}
