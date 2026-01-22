@@ -123,7 +123,7 @@ export default function Services() {
               What We Offer
             </span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 font-manrope">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Our Services
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto font-opensans leading-relaxed">
@@ -146,7 +146,7 @@ export default function Services() {
                 >
                   <service.icon className="h-7 w-7" style={{ color: brandColor, strokeWidth: 2 }} />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 font-manrope leading-tight pt-2">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight pt-2">
                   {service.title}
                 </h3>
               </div>
@@ -200,7 +200,7 @@ export default function Services() {
           <div className="absolute inset-0 rounded-3xl" style={{ background: `linear-gradient(135deg, ${brandColor}05 0%, ${brandColor}10 100%)` }}></div>
           <div className="relative p-8 sm:p-12 lg:p-16 rounded-3xl">
             <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 font-manrope">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                 Why Choose Us?
               </h2>
               <p className="text-lg sm:text-xl text-gray-600 font-opensans max-w-2xl mx-auto leading-relaxed">
@@ -221,7 +221,7 @@ export default function Services() {
                   >
                     <benefit.icon className="h-8 w-8 text-white" strokeWidth={2} />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900 font-manrope">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">
                     {benefit.title}
                   </h3>
                   <p className="text-gray-600 font-opensans leading-relaxed">

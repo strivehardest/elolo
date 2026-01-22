@@ -92,10 +92,10 @@ export default function PastEvents() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#030202]" style={{ fontFamily: 'Inter, sans-serif' }}>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#030202]">
               Past Events
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
+            <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Explore highlights from our previous events, workshops, and community gatherings
             </p>
           </div>
@@ -134,26 +134,26 @@ export default function PastEvents() {
 
                 {/* Content Section */}
                 <div className="p-10 md:p-12 flex flex-col justify-center">
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#030202] mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#030202] mb-6">
                     {currentEvent.title}
                   </h2>
                   
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center text-gray-700">
                       <Calendar className="w-5 h-5 text-[#df8125] mr-3" />
-                      <span className="text-lg" style={{ fontFamily: 'Roboto, sans-serif' }}>{currentEvent.date}</span>
+                      <span className="text-lg">{currentEvent.date}</span>
                     </div>
                     <div className="flex items-center text-gray-700">
                       <MapPin className="w-5 h-5 text-[#df8125] mr-3" />
-                      <span className="text-lg" style={{ fontFamily: 'Roboto, sans-serif' }}>{currentEvent.location}</span>
+                      <span className="text-lg">{currentEvent.location}</span>
                     </div>
                     <div className="flex items-center text-gray-700">
                       <Users className="w-5 h-5 text-[#df8125] mr-3" />
-                      <span className="text-lg" style={{ fontFamily: 'Roboto, sans-serif' }}>{currentEvent.attendees} Attendees</span>
+                      <span className="text-lg">{currentEvent.attendees} Attendees</span>
                     </div>
                   </div>
 
-                  <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8" style={{ fontFamily: 'Roboto, sans-serif' }}>
+                  <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
                     {currentEvent.description}
                   </p>
 

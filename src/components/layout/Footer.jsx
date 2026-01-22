@@ -165,25 +165,23 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10 bg-black/40 backdrop-blur">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-400">
-            <div className="text-center md:text-left">
+          <div className="flex flex-col items-center justify-center gap-2 text-sm md:text-base text-gray-400 text-center">
+            <div>
               <span className="font-medium text-white">© 2026 Elolo Agbleke</span>
               <span className="mx-2">•</span>
               <span>All Rights Reserved</span>
             </div>
-            <div className="text-center md:text-right">
+            <div>
               <span className="font-semibold text-gray-300">Designed & Developed by </span>
-<Link
-  href="https://www.celestialwebsolutions.net"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-[#df8125] font-extrabold tracking-wide 
-             hover:underline hover:text-[#ff9b3d] 
-             transition-colors duration-200"
->
-  Celestial Web Solutions
-</Link>
-
+              <Link
+                href="https://www.celestialwebsolutions.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#df8125] font-extrabold tracking-wide hover:underline hover:text-[#ff9b3d] transition-colors duration-200"
+                style={{ fontFamily: 'Bricolage Grotesque, Arial, sans-serif' }}
+              >
+                Celestial Web Solutions
+              </Link>
             </div>
           </div>
         </div>

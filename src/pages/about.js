@@ -95,7 +95,7 @@ const AboutPage = () => {
       
       <div className="bg-white min-h-screen">
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-yellow-600 to-orange-600 text-white py-20">
+        <div className="bg-orange-600 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-5xl md:text-6xl font-bold mb-6">About Elolo Agbleke</h1>
@@ -248,7 +248,7 @@ const AboutPage = () => {
                       <div className="w-14 h-14 mx-auto mb-4 bg-yellow-50 rounded-full flex items-center justify-center">
                         <Icon className="w-7 h-7 text-yellow-600" />
                       </div>
-                      <p className="font-semibold text-gray-900">{item.text}</p>
+                      <p className="font-semibold text-gray-900" style={{ fontFamily: "'Ruluko', Arial, sans-serif" }}>{item.text}</p>
                     </div>
                   );
                 })}

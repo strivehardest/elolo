@@ -3,14 +3,12 @@
 @import 'tailwindcss/utilities';
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Onest:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Onest:wght@400;700&family=Bricolage+Grotesque:wght@400;600;700&family=Ruluko&display=swap');
 
 body {
   font-family: 'Onest', Arial, sans-serif;
 }
-h1, h2, h3, h4, h5, h6, nav, .navigation, .navbar {
-  font-family: 'Montserrat', Arial, sans-serif;
-}
+
 
 /* Custom CSS Variables - integrated from logo:
    Primary (orange)  = #df8125
@@ -18,7 +16,7 @@ h1, h2, h3, h4, h5, h6, nav, .navigation, .navbar {
    Black             = #030202
 */
 :root {
-  --font-heading: 'Montserrat', Arial, sans-serif;
+  --font-heading: 'Bricolage Grotesque', 'Montserrat', Arial, sans-serif;
   --font-body: 'Onest', Arial, sans-serif;
 
   /* logo colours */
@@ -42,17 +40,12 @@ html {
 }
 
 /* Typography */
+/* All headings use Ruluko */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: 'Ruluko', Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-black);
-}
-
-/* Focus Styles */
-*:focus {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
 }
 
 /* Selection Styles */

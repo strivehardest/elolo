@@ -262,7 +262,10 @@ const TVETFoundationPage = () => {
         {/* Innovative Approaches Section */}
         <div className="mb-24">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#030202] mb-6">
+            <h2
+              className="text-4xl md:text-5xl font-bold text-[#030202] mb-6"
+              style={{ fontFamily: "'Ruluko', Arial, sans-serif" }}
+            >
               Innovative Approaches
             </h2>
             <p className="text-lg md:text-xl text-[#65605b] max-w-3xl mx-auto mb-12">

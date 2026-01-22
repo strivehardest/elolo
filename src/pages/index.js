@@ -145,15 +145,11 @@ const HomePage = () => {
           <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
             <div className="max-w-5xl mx-auto">
               {/* Main Tagline */}
-              <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight mb-8 tracking-tight" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-tight mb-8 tracking-tight" style={{ fontFamily: 'Ruluko, sans-serif' }}>
                 Building Practical Skills Systems for TVET through{' '}
                 <span className="text-[#df8125]">Technology, Design, and Capacity Building</span>
               </h1>
 
-              {/* Subtitle */}
-              <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-12 max-w-3xl mx-auto font-light leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
-                TVET Innovation That Works in Real Institutions
-              </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -167,25 +163,10 @@ const HomePage = () => {
                   href="/contact"
                   className="px-10 py-4 border-2 border-white text-white font-semibold text-lg rounded-lg hover:bg-white hover:text-[#df8125] transition-all duration-300"
                 >
-                  START A CONVERSATION
+                  CONTACT ME
                 </a>
               </div>
 
-              {/* Quick Links Row */}
-              <div className="mt-16 flex flex-wrap justify-center gap-8 text-white/80">
-                <a href="/services" className="hover:text-[#df8125] transition-colors text-sm uppercase tracking-wider font-medium">
-                  Services
-                </a>
-                <a href="/groups" className="hover:text-[#df8125] transition-colors text-sm uppercase tracking-wider font-medium">
-                  Organizations
-                </a>
-                <a href={YOUTUBE} target="_blank" rel="noopener noreferrer" className="hover:text-[#df8125] transition-colors text-sm uppercase tracking-wider font-medium">
-                  Videos
-                </a>
-                <a href="/resources" className="hover:text-[#df8125] transition-colors text-sm uppercase tracking-wider font-medium">
-                  Resources
-                </a>
-              </div>
             </div>
           </div>
 
@@ -205,12 +186,6 @@ const HomePage = () => {
             ))}
           </div>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-            <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
-              <div className="w-1.5 h-3 bg-white/70 rounded-full"></div>
-            </div>
-          </div>
         </section>
 
         {/* Introduction Section */}
@@ -218,7 +193,7 @@ const HomePage = () => {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 My Work in TVET
               </h2>
               <div className="w-24 h-1 bg-[#df8125] mx-auto mb-6"></div>
@@ -234,7 +209,7 @@ const HomePage = () => {
                 <div className="w-14 h-14 bg-[#df8125] rounded-xl flex items-center justify-center mb-6">
                   <Target className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
                   The Intersection
                 </h3>
                 <p className="text-gray-600 leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
@@ -249,7 +224,7 @@ const HomePage = () => {
                 <div className="w-14 h-14 bg-[#df8125] rounded-xl flex items-center justify-center mb-6">
                   <Settings className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
                   What I Do
                 </h3>
                 <p className="text-gray-600 leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
@@ -264,7 +239,7 @@ const HomePage = () => {
                 <div className="w-14 h-14 bg-[#df8125] rounded-xl flex items-center justify-center mb-6">
                   <Lightbulb className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
                   My Approach
                 </h3>
                 <p className="text-gray-600 leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
@@ -299,7 +274,7 @@ const HomePage = () => {
         <section className="py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 What I Focus On
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto" style={{ fontFamily: 'Roboto, sans-serif' }}>
@@ -308,7 +283,7 @@ const HomePage = () => {
             </div>
 
             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
                 I work with institutions to:
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
@@ -331,7 +306,7 @@ const HomePage = () => {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Core Areas of Work
               </h2>
               <div className="w-24 h-1 bg-[#df8125] mx-auto"></div>
@@ -348,7 +323,7 @@ const HomePage = () => {
                     <div className="w-16 h-16 bg-gradient-to-br from-[#df8125] to-[#c67320] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">
                       {area.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
@@ -375,7 +350,7 @@ const HomePage = () => {
           
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Why Work With Me
               </h2>
               <div className="w-24 h-1 bg-[#df8125] mx-auto"></div>
@@ -389,7 +364,7 @@ const HomePage = () => {
                       <Award className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'Inter, sans-serif' }}>
+                      <h3 className="text-xl font-bold text-white mb-3">
                         {item.title}
                       </h3>
                       <p className="text-white/90 leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
@@ -435,7 +410,7 @@ const HomePage = () => {
         <section className="py-20 bg-gray-50">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Start a Conversation
               </h2>
               <p className="text-lg text-gray-600" style={{ fontFamily: 'Roboto, sans-serif' }}>
@@ -449,7 +424,7 @@ const HomePage = () => {
                   <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle className="w-10 h-10 text-green-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
                     Message Sent!
                   </h3>
                   <p className="text-gray-600 mb-6" style={{ fontFamily: 'Roboto, sans-serif' }}>

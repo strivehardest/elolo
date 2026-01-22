@@ -64,19 +64,19 @@ export default function TestimonialsPage() {
       <section className="py-16 bg-white min-h-screen">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Testimonials
           </h1>
           <div className="w-24 h-1 bg-[#df8125] mx-auto mb-6"></div>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto" style={{ fontFamily: 'Roboto, sans-serif' }}>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Feedback from institutions, partners, and participants about Elolo's work in TVET, EdTech, and capacity building.
           </p>
         </div>
         <div className="space-y-10">
           {testimonials.map((t, idx) => (
             <div key={idx} className="bg-gray-50 rounded-xl shadow p-6 border-l-4 border-[#df8125]">
-              <h2 className="text-xl font-semibold text-[#df8125] mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>{t.title}</h2>
-              <blockquote className="text-gray-800 italic mb-2" style={{ fontFamily: 'Roboto, sans-serif' }}>
+              <h2 className="text-xl font-semibold text-[#df8125] mb-2">{t.title}</h2>
+              <blockquote className="text-gray-800 italic mb-2">
                 “{t.quote}”
               </blockquote>
               <div className="text-sm text-gray-600 text-right">— {t.author}</div>

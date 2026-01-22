@@ -22,14 +22,12 @@ export default function EventsPage() {
         <div className="text-center mb-16">
           <h1 
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
-            style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
             Workshops, Trainings &<br />Professional Engagements
           </h1>
           <div className="w-24 h-1.5 bg-orange-600 mx-auto mb-8 rounded-full"></div>
           <p 
             className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
-            style={{ fontFamily: 'Inter, sans-serif' }}
           >
             Regularly, I design, facilitate, and contribute to training programmes, workshops, and professional events focused on TVET, digital learning, and skills development. These engagements cut across staff development, student training, and institutional innovation.
           </p>
@@ -42,14 +40,13 @@ export default function EventsPage() {
             <div className="bg-[#df8125] px-8 py-6">
               <h2 
                 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-3"
-                style={{ fontFamily: 'Montserrat, sans-serif' }}
               >
                 <Hammer className="w-7 h-7" />
                 Training Workshops
               </h2>
             </div>
             <div className="px-8 py-8">
-              <ul className="space-y-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <ul className="space-y-4">
                 <li className="flex gap-3 items-start group">
                   <CheckCircle className="text-orange-600 w-6 h-6 mt-1 group-hover:scale-110 transition-transform flex-shrink-0" />
                   <span className="text-gray-700 text-lg">Immerging technologies for Teaching and Learning in TVET</span>
@@ -80,14 +77,13 @@ export default function EventsPage() {
             <div className="bg-[#df8125] px-8 py-6">
               <h2 
                 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-3"
-                style={{ fontFamily: 'Montserrat, sans-serif' }}
               >
                 <GraduationCap className="w-7 h-7" />
                 Orientation and Graduation & Skills Events
               </h2>
             </div>
             <div className="px-8 py-8">
-              <ul className="space-y-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <ul className="space-y-4">
                 <li className="flex gap-3 items-start group">
                   <CheckCircle className="text-orange-600 w-6 h-6 mt-1 group-hover:scale-110 transition-transform flex-shrink-0" />
                   <span className="text-gray-700 text-lg">Offers hands on training and coaching for newly admitted TVET students</span>
@@ -113,14 +109,13 @@ export default function EventsPage() {
             <div className="bg-[#df8125] px-8 py-6">
               <h2 
                 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-3"
-                style={{ fontFamily: 'Montserrat, sans-serif' }}
               >
                 <Mic2 className="w-7 h-7" />
                 Speaking & Facilitation
               </h2>
             </div>
             <div className="px-8 py-8">
-              <ul className="space-y-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+              <ul className="space-y-4">
                 <li className="flex gap-3 items-start group">
                   <CheckCircle className="text-orange-600 w-6 h-6 mt-1 group-hover:scale-110 transition-transform flex-shrink-0" />
                   <span className="text-gray-700 text-lg">Leads panel discussions on TVET innovation</span>
@@ -144,16 +139,16 @@ export default function EventsPage() {
         {/* CTA Section */}
         <div className="mt-16 flex justify-center">
           <div className="bg-[#df8125] rounded-2xl shadow-lg px-10 py-12 text-center max-w-2xl w-full">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Book an Event
             </h2>
-            <p className="text-lg text-white/90 mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+            <p className="text-lg text-white/90 mb-6">
               Interested in a workshop, training, or speaking engagement? Let’s collaborate to create a meaningful event for your institution or organization.
             </p>
             <a
               href="/contact"
               className="inline-block bg-orange-400 text-[#ffffff] font-bold px-8 py-4 rounded-xl text-lg shadow-md hover:bg-white/90 hover:text-[#b96a1a] transition-colors"
-              style={{ fontFamily: 'Montserrat, sans-serif' }}
+              
             >
               Contact to Book an Event
             </a>
