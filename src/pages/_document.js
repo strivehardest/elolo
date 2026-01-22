@@ -14,9 +14,6 @@ export default function Document() {
 
         {/* ✅ Favicon and App Icons */}
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
 
         {/* ✅ Web App Manifest */}
         <link rel="manifest" href="/manifest.json" />
