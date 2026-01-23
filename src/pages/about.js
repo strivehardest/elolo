@@ -97,7 +97,7 @@ const AboutPage = () => {
         {/* Hero Section */}
         <div className="relative h-[340px] md:h-[420px] w-full flex items-center justify-center overflow-hidden">
           <img
-            src="https://plus.unsplash.com/premium_photo-1682125090365-58de6dbf8143?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Training, technology, or speaking event"
             className="absolute inset-0 w-full h-full object-cover object-center z-0"
             style={{ filter: 'brightness(0.65)' }}
