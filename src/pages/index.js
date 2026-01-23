@@ -145,9 +145,8 @@ const HomePage = () => {
           <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
             <div className="max-w-5xl mx-auto">
               {/* Main Tagline */}
-              <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-tight mb-8 tracking-tight" style={{ fontFamily: 'Ruluko, sans-serif' }}>
-                Building Practical Skills Systems for TVET through{' '}
-                <span className="text-[#df8125]">Technology, Design, and Capacity Building</span>
+              <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-tight mb-8 tracking-tight">
+                Building Practical Skills Systems for TVET through Technology, Design, and Capacity Building
               </h1>
 
 

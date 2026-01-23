@@ -19,7 +19,7 @@ export default function Footer() {
               <Link href="https://eloloagbleke.com">
                 <div className="relative h-12 w-32 sm:h-14 sm:w-40">
                   <Image
-                    src="/logo.png"
+                    src="/logo1.png"
                     alt="Elolo Agbleke Logo"
                     fill
                     priority

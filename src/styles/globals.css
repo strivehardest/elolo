@@ -42,7 +42,7 @@ html {
 /* Typography */
 /* All headings use Ruluko */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ruluko', Arial, sans-serif;
+  font-family: 'Bricolage Grotesque', Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-black);

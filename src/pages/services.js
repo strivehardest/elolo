@@ -75,7 +75,10 @@ const services = [
     title: "Motivational Speaking",
     icon: Mic,
     details: [
-      "Inspire and energize your team or audience with impactful talks that ignite passion and purpose."
+      "Inspire and energize your team or audience with impactful talks that ignite passion and purpose.",
+      "Elolo draws from real-life experiences, practical wisdom, and a deep understanding of human motivation to deliver messages that resonate.",
+      "Whether for corporate teams, youth groups, or community organizations, his sessions foster resilience, growth mindsets, and a renewed sense of possibility.",
+      "Expect actionable takeaways, engaging stories, and a contagious enthusiasm that leaves a lasting impression.",
     ],
   },
 ];
@@ -154,15 +157,7 @@ export default function Services() {
               <ul className="space-y-3 mb-5">
                 {service.details.map((point, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-700 font-opensans">
-                    <svg 
-                      className="w-5 h-5 flex-shrink-0 mt-0.5" 
-                      fill="none" 
-                      viewBox="0 0 24 24" 
-                      stroke={brandColor}
-                      strokeWidth="2.5"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
+                    <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#ff8125]" aria-hidden="true" />
                     <span className="leading-relaxed">{point}</span>
                   </li>
                 ))}

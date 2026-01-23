@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 // Add this to your _app.js or _document.js:
 // import '@fontsource/montserrat/400.css';
@@ -74,13 +74,46 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
   };
 
   return (
-    <>
+    <React.Fragment>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-montserrat ${
           scrolled ? 'bg-white shadow-sm' : 'bg-white'
         }`}
         style={{ fontFamily: "'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}
       >
+        {/* Social, Contact (Top Bar) */}
+        <div className="w-full bg-gray-50 border-b border-gray-200">
+          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2 text-xs text-gray-700">
+            <div className="flex items-center gap-3">
+              <a href="tel:+233243623269" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors" title="Call">
+                <Phone className="w-4 h-4" /> +233 24 362 3269
+              </a>
+              <a href="mailto:info@eloloagbleke.com" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors" title="Email">
+                <Mail className="w-4 h-4" /> info@eloloagbleke.com
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <a href="https://web.facebook.com/EldChapEl" target="_blank" rel="noopener noreferrer" title="Facebook" className="hover:scale-110 transition-transform">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style={{ width: 20, height: 20 }} />
+              </a>
+              <a href="https://x.com/elolo2000?s=11" target="_blank" rel="noopener noreferrer" title="X" className="hover:scale-110 transition-transform">
+                <img src="https://cdn.simpleicons.org/x/000000" alt="X" style={{ width: 14, height: 14 }} />
+              </a>
+              <a href="https://www.youtube.com/@eloloagbleke746" target="_blank" rel="noopener noreferrer" title="YouTube" className="hover:scale-110 transition-transform">
+                <img src="https://cdn.simpleicons.org/youtube/ff0000" alt="YouTube" style={{ width: 20, height: 20 }} />
+              </a>
+              <a href="https://gh.linkedin.com/in/elolo-kwabla-magnus-agbleke-69693b2b" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="hover:scale-110 transition-transform">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style={{ width: 14, height: 14 }} />
+              </a>
+              <a href="https://wa.me/233243623269" target="_blank" rel="noopener noreferrer" title="WhatsApp" className="hover:scale-110 transition-transform">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: 20, height: 20 }} />
+              </a>
+              <a href="https://t.me/EldChapEl" target="_blank" rel="noopener noreferrer" title="Telegram" className="hover:scale-110 transition-transform">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style={{ width: 14, height: 14 }} />
+              </a>
+            </div>
+          </div>
+        </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -182,6 +215,7 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
         </div>
 
         {/* Mobile Menu */}
+        {/* ...existing code... */}
         <div
           className={`lg:hidden bg-white border-t border-gray-100 transition-all duration-300 ${
             isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
@@ -252,7 +286,7 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
       </nav>
 
       {/* Spacer to prevent content from going under fixed nav */}
-      <div className="h-20" />
+      <div className="h-20"></div>
 
       {/* WhatsApp Button */}
       <a
@@ -265,10 +299,10 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
           alt="WhatsApp"
-          className="w-6 h-6"
+          style={{ width: 32, height: 32 }}
         />
       </a>
-    </>
+    </React.Fragment>
   );
 };
 
