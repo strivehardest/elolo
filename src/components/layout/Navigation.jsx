@@ -76,23 +76,23 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
   return (
     <React.Fragment>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-montserrat ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled ? 'bg-white shadow-sm' : 'bg-white'
         }`}
-        style={{ fontFamily: "'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}
+        style={{ fontFamily: "var(--font-heading)" }}
       >
         {/* Social, Contact (Top Bar) */}
         <div className="w-full bg-gray-50 border-b border-gray-200">
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2 text-xs text-gray-700">
-            <div className="flex items-center gap-3">
-              <a href="tel:+233243623269" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors" title="Call">
+          <div className="max-w-7xl mx-auto flex flex-col items-center justify-center px-4 py-2 text-xs text-gray-700 md:flex-row md:justify-between md:items-center">
+            <div className="flex flex-row justify-between w-full md:w-auto md:flex-row md:items-center md:gap-3">
+              <a href="tel:+233243623269" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors">
                 <Phone className="w-4 h-4" /> +233 24 362 3269
               </a>
-              <a href="mailto:info@eloloagbleke.com" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors" title="Email">
+              <a href="mailto:info@eloloagbleke.com" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors">
                 <Mail className="w-4 h-4" /> info@eloloagbleke.com
               </a>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-2 mt-2 md:mt-0">
               <a href="https://web.facebook.com/EldChapEl" target="_blank" rel="noopener noreferrer" title="Facebook" className="hover:scale-110 transition-transform">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style={{ width: 20, height: 20 }} />
               </a>
