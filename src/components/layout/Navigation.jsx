@@ -3,11 +3,6 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { Menu, X, ChevronDown, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
-// Add this to your _app.js or _document.js:
-// import '@fontsource/montserrat/400.css';
-// import '@fontsource/montserrat/500.css';
-// import '@fontsource/montserrat/600.css';
-// import '@fontsource/montserrat/700.css';
 
 const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,7 +51,7 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
       href: 'resources',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'Documents', href: 'resources/documents' },
+        { name: 'Downloads', href: 'resources/download' },
         { name: 'Testimonials', href: 'resources/testimonials' },
         { name: 'Useful Links', href: 'resources/links' },
         { name: 'Gallery', href: 'resources/gallery' },

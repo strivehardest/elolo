@@ -130,7 +130,7 @@ export default function Footer() {
               {
                 title: "Resources",
                 links: [
-                  { href: "/resources/documents", label: "Documents" },
+                  { href: "/resources/download", label: "Downloads" },
                   { href: "/resources/testimonials", label: "Testimonials" },
                   { href: "/resources/links", label: "Useful Links" },
                   { href: "/resources/gallery", label: "Gallery" },

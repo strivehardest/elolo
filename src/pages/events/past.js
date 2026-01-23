@@ -89,6 +89,94 @@ export default function PastEvents() {
       attendees: "500+",
       description: "A conference focused on spiritual growth and empowerment for community leaders and members.",
       image: "/events/past9.jpg"
+    },
+    {
+      id: 10,
+      title: "End of Year Thanksgiving Service",
+      date: "25th November, 2023",
+      location: "PIWC Tesano, Accra",
+      attendees: "1000+",
+      description: "A thanksgiving service to celebrate the achievements and milestones of the year.",
+      image: "/events/past10.jpeg"
+    },
+    {
+      id: 11,
+      title: "The TVET Masterclass",
+      date: "June",
+      location: "Google Meet",
+      image: "/events/past11.jpeg"
+    },
+    {
+      id: 12,
+      title: "Transforming TVET Delivery using Digital Tools",
+      date:"15th May, 2021",
+      location: "Biriwa Technical Institute, Central Region",
+      attendees: "200+",
+      description: "A workshop focused on leveraging digital tools to enhance the delivery of TVET programs.",
+      image: "/events/past12.jpeg"
+    },
+    {
+      id: 13,
+      title: "Pedagogy and AI-Pedagogy in TVET",
+      date:"22nd September, 2025",
+      location: "Google Meet",
+      attendees: "150+",
+      description: "An online seminar exploring the integration of AI in pedagogical practices within TVET.",
+      image: "/events/past13.jpeg"
+    },
+    {
+      id: 14,
+      title:"Cape Coast Convocation - Talented for Impact",
+      date: "12th May, 2018",
+      location: "Aggrey Memorial SHS, Cape Coast",
+      attendees: "2000+",
+      description: "A convocation ceremony celebrating the achievements of graduates and their potential to make a positive impact.",
+      image: "/events/past14.jpeg"
+    },
+    {
+      id: 15,
+      title: "Spiritual Deeping Experience",
+      date: "24th-26th, March, 2023",
+      location: "Biriwa Technical Institute, Central Region",
+      attendees: "300+",
+      description: "A retreat focused on spiritual growth and deepening one's faith through various activities and sessions.",
+      image: "/events/past15.jpeg"
+    },
+    {
+      id: 16,
+      title: "Cape Tech for Christ",
+      date: "10th-12th, November, 2023",
+      location: "Cape Coast Technical University",
+      attendees: "500+",
+      description: "A faith-based event aimed at inspiring and equipping students and staff for Christian service.",
+      image: "/events/past16.jpeg"
+    },
+    {
+      id: 17,
+      title: "Skills Development",
+      date: "24th September, 2023",
+      location: "Redemption Chapel, Mamprobi, Accra",
+      attendees: "100+",
+      description: "A workshop focused on enhancing vocational skills for better employability and career growth.",
+      image: "/events/past17.jpeg"
+    },
+    {
+      id: 18,
+      title: "Career Guidance Summit",
+      date: "3rd November, 2023",
+      location: "Kumasi Aglican SHS, Kumasi",
+      attendees: "300+",
+      description: "A summit aimed at providing career guidance and counseling to students for informed decision-making.",
+      image: "/events/past18.jpeg"
+    },
+    {
+      id: 19,
+      title: "Technical and Vocational Education & Traning, a means of human empowerment",
+      date: "15th October, 2023",
+      location: "Presbyterian Church of Ghana, Kuntunse",
+      attendees: "300+",
+      description: "A seminar discussing the role of TVET in empowering individuals and communities for sustainable development.",
+      image: "/events/past19.jpeg"
     }
   ];
 
