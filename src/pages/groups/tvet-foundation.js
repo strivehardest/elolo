@@ -66,8 +66,8 @@ const TVETFoundationPage = () => {
               />
             </div>
             <div className="text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-5 tracking-tight">
-                TVET Foundation Ghana
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-5 tracking-tight uppercase">
+                TVET FOUNDATION GHANA
               </h1>
               <p className="text-xl md:text-2xl text-white/95 max-w-3xl leading-relaxed font-medium mb-3">
                 Foundation - Policy and Perception

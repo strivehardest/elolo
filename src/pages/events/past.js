@@ -35,6 +35,60 @@ export default function PastEvents() {
       attendees: "500+",
       description: "A gathering of industry leaders, policymakers, and educators to discuss the future of TVET in Ghana.",
       image: "/events/past3.jpeg"
+    },
+    {
+      id: 4,
+      title: "Virtual Reality Application",
+      date: "January 3-4, 2026",
+      location: "KIT, Kedzikope, Lord's Gym",
+      attendees: "50+",
+      description: "For school students to explore virtual reality applications in education.",
+      image: "/events/past4.jpeg"
+    },
+    {
+      id: 5,
+      title: "Allos Parakletos",
+      date: "May 23-25, 2025",
+      location: "Biriwa Technical Institute, Central Region",
+      attendees: "3000+",
+      description: "A significant community event focused on vocational education and training.",
+      image: "/events/past5.jpg"
+    },
+    {
+      id: 6,
+      title: "BarCamp Cape Coast Mentor",
+      date: "June 28, 2025",
+      location: "GNAT Hall, Cape Coast",
+      attendees: "3000+",
+      description: "A mentorship event focused on fostering collaboration and knowledge sharing among TVET professionals.",
+      image: "/events/past6.jpg"
+    },
+    {
+      id: 7,
+      title: "Soft Skills for TVET Excellence",
+      date:"July 1, 2023",
+      location:"PIWC Tesano, Accra",
+      attendees: "200+",
+      description: "A workshop aimed at enhancing the soft skills of TVET students for better employability.",
+      image: "/events/past7.jpg"
+    },
+    {
+      id: 8,
+      title: "ICT Bootcamp for students",
+      date: "21st -31st July, 2025",
+      location: "KIT, Kedzikope, Lord's Gym",
+      attendees: "30+",
+      description: "An intensive ICT training program designed to equip students with essential digital skills.",
+      image: "/events/past8.jpg"
+    },
+    {
+      id: 9,
+      title: "Prayer Empowerment COnference - Influence",
+      date: "23rd August, 2025",
+      location: "PIWC Tesano, Accra",
+      attendees: "500+",
+      description: "A conference focused on spiritual growth and empowerment for community leaders and members.",
+      image: "/events/past9.jpg"
     }
   ];
 
@@ -159,7 +213,7 @@ export default function PastEvents() {
 
                   {/* Event Number Indicator */}
                   <div className="text-sm font-semibold text-[#df8125]">
-                    Image {currentIndex + 1} of {events.length}
+                    Event {currentIndex + 1} of {events.length}
                   </div>
                 </div>
               </div>

@@ -54,16 +54,16 @@ const AboutPage = () => {
       Icon: GraduationCap,
     },
     {
-      number: '10+',
-      label: 'Years of Marriage',
-      description: 'Happily married to Lady Judith Sena Agbleke',
-      Icon: Gem,
+      number: '5,000+',
+      label: 'People Trained',
+      description: 'Beneficiaries of ICT, TVET, and leadership programs',
+      Icon: Users,
     },
     {
-      number: '3',
-      label: 'Wonderful Children',
-      description: 'Etornam, Elikem, and Esinam',
-      Icon: Users,
+      number: '100+',
+      label: 'Events Organized',
+      description: 'Workshops, conferences, and outreach initiatives',
+      Icon: Calendar,
     },
   ];
 
@@ -95,15 +95,19 @@ const AboutPage = () => {
       
       <div className="bg-white min-h-screen">
         {/* Hero Section */}
-        <div className="bg-orange-600 text-white py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">About Elolo Agbleke</h1>
-              <div className="w-24 h-1 mx-auto mb-8 bg-white"></div>
-              <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed">
-                Transforming Lives Through TVET, Digital Innovation & Faith-Based Leadership
-              </p>
-            </div>
+        <div className="relative h-[340px] md:h-[420px] w-full flex items-center justify-center overflow-hidden">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1682125090365-58de6dbf8143?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Training, technology, or speaking event"
+            className="absolute inset-0 w-full h-full object-cover object-center z-0"
+            style={{ filter: 'brightness(0.65)' }}
+          />
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">About Elolo Agbleke</h1>
+            <div className="w-24 h-1 mx-auto mb-8 bg-white opacity-80"></div>
+            <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed text-white drop-shadow">
+              Transforming Lives Through TVET, Digital Innovation & Faith-Based Leadership
+            </p>
           </div>
         </div>
 
@@ -179,14 +183,14 @@ const AboutPage = () => {
                 {achievements.map((achievement, idx) => {
                   const Icon = achievement.Icon;
                   return (
-                    <div 
-                      key={idx} 
-                      className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
-                    >
-                      <div className="w-28 h-28 mx-auto mb-6 rounded-full bg-yellow-50 border-4 border-yellow-600 flex flex-col items-center justify-center">
-                        <Icon className="w-8 h-8 text-yellow-600 mb-2" />
-                        <div className="text-3xl font-bold text-yellow-600">{achievement.number}</div>
-                      </div>
+                        <div 
+                          key={idx} 
+                          className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+                        >
+                          <div className="mb-6 flex flex-col items-center justify-center">
+                            <Icon className="w-10 h-10 text-yellow-600 mb-2" />
+                            <div className="text-3xl font-bold text-yellow-600" style={{ fontFamily: "var(--font-heading)" }}>{achievement.number}</div>
+                          </div>
                       <h3 className="text-xl font-bold mb-3 text-gray-900">{achievement.label}</h3>
                       <p className="text-gray-600 leading-relaxed">{achievement.description}</p>
                     </div>
@@ -248,7 +252,7 @@ const AboutPage = () => {
                       <div className="w-14 h-14 mx-auto mb-4 bg-yellow-50 rounded-full flex items-center justify-center">
                         <Icon className="w-7 h-7 text-yellow-600" />
                       </div>
-                      <p className="font-semibold text-gray-900" style={{ fontFamily: "'Ruluko', Arial, sans-serif" }}>{item.text}</p>
+                      <p className="font-semibold text-gray-900" style={{ fontFamily: "var(--font-heading)" }}>{item.text}</p>
                     </div>
                   );
                 })}
