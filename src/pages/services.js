@@ -114,9 +114,8 @@ export default function Services() {
         openGraph={pagesSEO.services.openGraph}
         additionalMetaTags={[{
           name: 'keywords',
-          content: 'Elolo Agbleke, services, TVET, professional development, event planning, mentoring, Ghana, community building, consulting'
-        }]}
-      />
+          content: 'Elolo Agbleke, TVET, Ghana, services, consulting, training, workshops, professional development, skills, capacity building, digital learning, curriculum, VR, blended learning, advisory, project support, motivational speaking, vocational training, technical education, workforce, employability, youth empowerment, TVET Ghana, Elolo TVET, education reform, industry partnership, TVET advocacy, TVET innovation, TVET leadership, TVET impact, Elolo influence, TVET excellence, TVET projects, Elolo initiatives, TVET solutions, TVET consultancy, TVET change, TVET future, TVET best practices, TVET events Ghana, Elolo speaker, TVET mentor, TVET capacity building, Elolo workshops, TVET conferences, TVET partnerships, TVET empowerment, Elolo leadership, TVET training, TVET development, Elolo Ghana, TVET success, TVET stories, TVET educator, Elolo advocate, TVET influencer, Elolo community, TVET support, Elolo Ghana TVET, TVET Ghanaian, Elolo Ghana education, TVET Ghana change, Elolo Ghana impact, TVET Ghana projects, Elolo Ghana skills, TVET Ghana expert, Elolo Ghana TVET leader, TVET Ghanaian leader, Elolo Ghana TVET expert, TVET Ghanaian expert, Elolo Ghana TVET consultant, TVET Ghanaian consultant, Elolo Ghana TVET mentor, TVET Ghanaian mentor, Elolo Ghana TVET speaker, TVET Ghanaian speaker, Elolo Ghana TVET influencer, TVET Ghanaian influencer, Elolo Ghana TVET advocate, TVET Ghanaian advocate, Elolo Ghana TVET inspiration, TVET Ghanaian inspiration, Elolo Ghana TVET role model, TVET Ghanaian role model'
+        }]} />
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}

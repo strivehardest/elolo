@@ -30,7 +30,7 @@ export const defaultSEO = {
   additionalMetaTags: [
     {
       name: 'keywords',
-      content: 'TVET, technical and vocational education, skills development, community building, professional development, networking, events, groups, resources, leadership, mentoring, Elolo Agbleke, Ghana, education, training',
+      content: 'TVET, TVET Foundation, TVET Founder, Motivational Speakers in Ghana, technical and vocational education, skills development, community building, professional development, networking, events, groups, resources, leadership, mentoring, Elolo Agbleke, Ghana, education, training',
     },
     {
       name: 'author',
@@ -65,7 +65,7 @@ export const pagesSEO = {
     additionalMetaTags: [
       {
         name: 'keywords',
-        content: 'TVET, technical and vocational education, skills development, community building, professional development, networking, events, groups, resources, leadership, mentoring, Elolo Agbleke, Ghana, education, training',
+        content: 'TVET, TVET Foundation, TVET Founder, Motivational Speakers in Ghana, technical and vocational education, skills development, community building, professional development, networking, events, groups, resources, leadership, mentoring, Elolo Agbleke, Ghana, education, training',
       },
     ],
   },
@@ -82,7 +82,7 @@ export const pagesSEO = {
     additionalMetaTags: [
       {
         name: 'keywords',
-        content: 'TVET, technical and vocational education, skills development, community building, professional development, leadership, Elolo Agbleke, Ghana, education, training',
+        content: 'TVET, TVET Foundation, TVET Founder, Motivational Speakers in Ghana, technical and vocational education, skills development, community building, professional development, leadership, Elolo Agbleke, Ghana, education, training',
       },
     ],
   },
@@ -99,7 +99,7 @@ export const pagesSEO = {
     additionalMetaTags: [
       {
         name: 'keywords',
-        content: 'TVET, technical and vocational education, community groups, professional networks, Elolo Agbleke, Ghana, education, training',
+        content: 'TVET, TVET Foundation, TVET Founder, Motivational Speakers in Ghana, technical and vocational education, community groups, professional networks, Elolo Agbleke, Ghana, education, training',
       },
     ],
   },
@@ -116,7 +116,7 @@ export const pagesSEO = {
     additionalMetaTags: [
       {
         name: 'keywords',
-        content: 'TVET, technical and vocational education, events, workshops, conferences, networking, Elolo Agbleke, Ghana, education, training',
+        content: 'TVET, TVET Foundation, TVET Founder, Motivational Speakers in Ghana,   technical and vocational education, events, workshops, conferences, networking, Elolo Agbleke, Ghana, education, training',
       },
     ],
   },
@@ -133,7 +133,7 @@ export const pagesSEO = {
     additionalMetaTags: [
       {
         name: 'keywords',
-        content: 'TVET, technical and vocational education, services, professional development, event planning, mentoring, Elolo Agbleke, Ghana, education, training',
+        content: 'TVET, TVET Foundation, TVET Founder, Motivational Speakers in Ghana, technical and vocational education, services, professional development, event planning, mentoring, Elolo Agbleke, Ghana, education, training',
       },
     ],
   },
@@ -150,7 +150,7 @@ export const pagesSEO = {
     additionalMetaTags: [
       {
         name: 'keywords',
-        content: 'TVET, technical and vocational education, resources, documents, downloads, Elolo Agbleke, Ghana, education, training',
+        content: 'TVET, TVET Foundation, TVET Founder, Motivational Speakers in Ghana, technical and vocational education, resources, documents, downloads, Elolo Agbleke, Ghana, education, training',
       },
     ],
   },
@@ -193,7 +193,8 @@ export const generateOrganizationSchema = () => {
       availableLanguage: 'English',
     },
     sameAs: [
-      // Add social media URLs here when available
+      'https://facebook.com/eloloagbleke',
+      'https://li'
       // 'https://linkedin.com/in/eloloagbleke',
       // 'https://twitter.com/eloloagbleke',
     ],
@@ -243,4 +244,14 @@ export const generateEventSchema = (event) => {
       priceCurrency: 'USD',
     },
   };
+};
+
+// Social links for SEO and metadata
+export const socialLinks = {
+  facebook: 'https://web.facebook.com/EldChapEl',
+  twitter: 'https://x.com/elolo2000?s=11',
+  youtube: 'https://www.youtube.com/@eloloagbleke746',
+  linkedin: 'https://gh.linkedin.com/in/elolo-kwabla-magnus-agbleke-69693b2b',
+  whatsapp: 'https://wa.me/233243623269',
+  telegram: 'https://t.me/EldChapEl',
 };
