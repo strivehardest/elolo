@@ -13,7 +13,7 @@ export default function EventsPage() {
         openGraph={pagesSEO.events.openGraph}
         additionalMetaTags={[{
           name: 'keywords',
-          content: 'Elolo Agbleke, events, workshops, conferences, networking, TVET, Ghana, professional development, community gatherings'
+          content: 'Elolo Agbleke, events in Ghana, TVETS Foundation workshops in Ghana, conferences in Ghana, networking, TVET in Ghana, professional development, community gatherings, TVET events, workshops, conferences, Ghana, Motivational Speakers in Ghana'
         }]}
       />
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white min-h-screen">

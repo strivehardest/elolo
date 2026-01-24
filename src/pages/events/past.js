@@ -177,6 +177,15 @@ export default function PastEvents() {
       attendees: "300+",
       description: "A seminar discussing the role of TVET in empowering individuals and communities for sustainable development.",
       image: "/events/past19.jpeg"
+    },
+    {
+      id: 20,
+      title: "7th ACCRA YOUTH SUMMIT, Preparing for the Job Market",
+      date: "19th October, 2019",
+      location: "Accra Technical University, Accra",
+      attendees: "1000+",
+      description: "A youth summit focused on equipping young people with the skills and knowledge needed to succeed in the job market.",
+      image: "/events/past20.jpeg"
     }
   ];
 

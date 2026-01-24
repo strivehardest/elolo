@@ -14,18 +14,20 @@ import {
   Lightbulb,
   Settings,
   Award,
-  MessageSquare,
+  Mic,
   Send
 } from "lucide-react";
 
 const heroImages = [
-  '/images/hero/hero4.jpg',
-  '/images/hero/hero1.jpg',
-  '/images/hero/hero3.jpg',
   '/images/hero/hero2.jpg',
   '/images/hero/hero5.jpg',
   '/images/hero/hero6.jpg',
-  '/images/hero/hero7.jpeg'
+  '/images/hero/hero7.jpeg',
+  '/images/hero/hero8.JPG',
+  '/images/hero/hero9.JPG',
+  '/images/hero/hero10.JPG',
+  '/images/hero/hero1.jpeg',
+
 ];
 
 const coreAreas = [
@@ -331,6 +333,18 @@ const HomePage = () => {
                   </div>
                 );
               })}
+              {/* Motivational Speaking Card */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#df8125]/30 group">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#df8125] to-[#c67320] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Mic className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Motivational Speaking
+                </h3>
+                <p className="text-gray-600 leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
+                  Inspire and energize your team or audience with impactful talks that ignite passion and purpose.<br />
+                </p>
+              </div>
             </div>
           </div>
         </section>

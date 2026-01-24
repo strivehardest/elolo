@@ -1,59 +1,59 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SEOHead from '../../components/seo/SEOHead';
-import { pagesSEO } from '../../lib/seo';
+import { X, Filter } from 'lucide-react';
 
-const images = [
-  '/gallery/hero1.jpg',
-  '/gallery/hero2.jpg',
-  '/gallery/hero3.jpg',
-  '/gallery/hero4.jpg',
-  '/gallery/hero5.jpg',
-  '/gallery/hero6.jpg',
-  '/gallery/image1.jpg',
+const albums = [
+  {
+    name: 'VR in TVET Training-of-Trainers Blended Learning Course - Phase I & II',
+    images: Array.from({ length: 45 }, (_, i) => `/gallery/vr/vr1 (${i + 1}).jpeg`),
+  },
+  {
+    name: '2nd Accra Worship and Prayer Conference',
+    images: ['/gallery/accra-worship1.jpg'],
+  },
+  {
+    name: '1st Accra TVET Worship and Empowerment Conference',
+    images: ['/gallery/accra-worship2.jpg'],
+  },
+  {
+    name: "50th Anniversary Celebration of Biriwa Technical Institute",
+    images: ['/gallery/biriwa-anniversary1.jpg'],
+  },
+  {
+    name: "Visitation to Old Students' of Biriwa Technical Institute Studying at TTU and CCTU",
+    images: ['/gallery/biriwa-visitation1.jpg'],
+  },
+  {
+    name: 'Chaplaincy Ministration',
+    images: ['/gallery/chaplaincy1.jpg', '/gallery/chaplaincy2.jpg', '/gallery/chaplaincy3.jpg', '/gallery/chaplaincy4.jpg'],
+  },
 ];
 
 export default function GalleryPage() {
   const [selected, setSelected] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeAlbum, setActiveAlbum] = useState(0);
+  const [imageStates, setImageStates] = useState({});
+  const [displayCount, setDisplayCount] = useState(12);
 
-  const itemsPerPage = {
-    mobile: 1,
-    tablet: 2,
-    desktop: 3,
-    large: 4
+  useEffect(() => {
+    setImageStates({});
+    setDisplayCount(12);
+  }, [activeAlbum]);
+
+  const images = albums[activeAlbum].images;
+  const visibleImages = images.slice(0, displayCount);
+  const hasMore = displayCount < images.length;
+
+  const loadMore = () => {
+    setDisplayCount(prev => Math.min(prev + 12, images.length));
   };
 
-  const getItemsPerView = () => {
-    if (typeof window === 'undefined') return itemsPerPage.desktop;
-    const width = window.innerWidth;
-    if (width < 640) return itemsPerPage.mobile;
-    if (width < 768) return itemsPerPage.tablet;
-    if (width < 1280) return itemsPerPage.desktop;
-    return itemsPerPage.large;
+  const handleImageLoad = (src) => {
+    setImageStates(prev => ({ ...prev, [src]: { loaded: true, error: false } }));
   };
 
-  const [itemsPerView, setItemsPerView] = useState(getItemsPerView());
-
-  React.useEffect(() => {
-    const handleResize = () => {
-      setItemsPerView(getItemsPerView());
-    };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const maxIndex = Math.max(0, images.length - itemsPerView);
-
-  const goToNext = () => {
-    setCurrentIndex(prev => Math.min(prev + 1, maxIndex));
-  };
-
-  const goToPrev = () => {
-    setCurrentIndex(prev => Math.max(prev - 1, 0));
-  };
-
-  const handleImageClick = (src) => {
-    setSelected(src);
+  const handleImageError = (src) => {
+    setImageStates(prev => ({ ...prev, [src]: { loaded: true, error: true } }));
   };
 
   return (
@@ -62,116 +62,163 @@ export default function GalleryPage() {
         title="Gallery | TVET Events & Community Highlights"
         description="View the gallery of TVET events, workshops, and community highlights from Elolo Agbleke's work in Ghana."
         canonical="https://eloloagbleke.com/resources/gallery"
-        openGraph={{
-          title: "Gallery | TVET Events & Community Highlights",
-          description: "View the gallery of TVET events, workshops, and community highlights from Elolo Agbleke's work in Ghana.",
-          url: "https://eloloagbleke.com/resources/gallery"
-        }}
-        additionalMetaTags={[{
-          name: 'keywords',
-          content: 'gallery, TVET, events, workshops, Elolo Agbleke, Ghana, community, highlights, photos, images'
-        }]}
       />
-      <div className="min-h-screen w-full bg-white">
-      <div className="w-full max-w-7xl mx-auto py-8 px-4 sm:py-12 sm:px-6 md:py-16 lg:px-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-10 md:mb-12 text-[#df8125] text-center">
-          Gallery
-        </h1>
-        
-        <div className="relative w-full">
-          {/* Navigation Buttons */}
-          {currentIndex > 0 && (
-            <button
-              onClick={goToPrev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white text-[#df8125] rounded-full w-10 h-10 sm:w-12 sm:h-12 shadow-lg hover:bg-[#df8125] hover:text-white transition-colors flex items-center justify-center font-bold text-2xl -ml-5"
-              aria-label="Previous"
-            >
-              ‹
-            </button>
-          )}
-          
-          {currentIndex < maxIndex && (
-            <button
-              onClick={goToNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white text-[#df8125] rounded-full w-10 h-10 sm:w-12 sm:h-12 shadow-lg hover:bg-[#df8125] hover:text-white transition-colors flex items-center justify-center font-bold text-2xl -mr-5"
-              aria-label="Next"
-            >
-              ›
-            </button>
-          )}
+      
+      <div className="min-h-screen bg-white">
+        {/* Header */}
+        <div className="bg-[#df8125] text-white py-12 md:py-16">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">Gallery</h1>
+            <p className="text-white/90 text-base sm:text-lg">
+              Explore moments from our TVET initiatives
+            </p>
+          </div>
+        </div>
 
-          {/* Gallery Container */}
-          <div className="overflow-hidden w-full">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out gap-3 sm:gap-4 md:gap-5 lg:gap-6"
-              style={{
-                transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`
-              }}
-            >
-              {images.map((src, idx) => (
-                <div
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          {/* Filter Tabs */}
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <Filter className="w-5 h-5 text-[#df8125]" />
+              <h2 className="text-lg font-bold text-gray-900">Filter by Album</h2>
+            </div>
+            
+            <div className="flex flex-wrap gap-2">
+              {albums.map((album, idx) => (
+                <button
                   key={idx}
-                  className="flex-shrink-0 cursor-pointer"
-                  style={{
-                    width: `calc(${100 / itemsPerView}% - ${(itemsPerView - 1) * (itemsPerView === 1 ? 12 : itemsPerView === 2 ? 16 : itemsPerView === 3 ? 20 : 24) / itemsPerView}px)`
-                  }}
-                  onClick={() => handleImageClick(src)}
+                  onClick={() => setActiveAlbum(idx)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                    activeAlbum === idx
+                      ? 'bg-[#df8125] text-white shadow-md'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
                 >
-                  <div className="relative w-full h-56 sm:h-64 md:h-72 lg:h-80 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                    <img
-                      src={src}
-                      alt={`Gallery image ${idx + 1}`}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
+                  {album.name}
+                </button>
               ))}
             </div>
           </div>
 
-          {/* Pagination Dots */}
-          <div className="flex justify-center gap-2 mt-6 sm:mt-8">
-            {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all ${
-                  currentIndex === idx ? 'bg-[#df8125] w-6 sm:w-8' : 'bg-gray-300'
-                }`}
-                aria-label={`Go to slide ${idx + 1}`}
-              />
-            ))}
+          {/* Masonry Grid */}
+          <div className="columns-2 md:columns-3 lg:columns-4 gap-3 sm:gap-4 space-y-3 sm:space-y-4">
+            {visibleImages.map((src, idx) => {
+              const state = imageStates[src] || { loaded: false, error: false };
+              
+              return (
+                <div
+                  key={`${activeAlbum}-${idx}`}
+                  className="break-inside-avoid cursor-pointer group relative"
+                  onClick={() => !state.error && setSelected(src)}
+                >
+                  <div className="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-gray-100">
+                    {/* Loading Skeleton */}
+                    {!state.loaded && (
+                      <div className="w-full h-48 sm:h-56 md:h-64 bg-gray-200 animate-pulse" />
+                    )}
+                    
+                    {/* Error State */}
+                    {state.error && (
+                      <div className="w-full h-48 sm:h-56 md:h-64 bg-gray-100 flex items-center justify-center">
+                        <span className="text-gray-400 text-sm">Image unavailable</span>
+                      </div>
+                    )}
+                    
+                    {/* Image */}
+                    {!state.error && (
+                      <img
+                        src={src}
+                        alt={`${albums[activeAlbum].name} - Image ${idx + 1}`}
+                        className={`w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ${
+                          state.loaded ? 'opacity-100' : 'opacity-0'
+                        }`}
+                        onLoad={() => handleImageLoad(src)}
+                        onError={() => handleImageError(src)}
+                        loading="lazy"
+                      />
+                    )}
+                    
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute bottom-0 left-0 right-0 p-3">
+                        <p className="text-white text-xs font-medium">Click to view</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        </div>
-      </div>
 
-      {/* Modal */}
-      {selected && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-3 sm:p-6"
-          onClick={() => setSelected(null)}
-        >
-          <div 
-            className="relative w-full h-full max-w-6xl max-h-[90vh] flex items-center justify-center"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              src={selected}
-              alt="Selected gallery image"
-              className="max-w-full max-h-full object-contain rounded-lg"
-            />
-            
-            <button
-              className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-white text-[#df8125] rounded-full w-10 h-10 sm:w-12 sm:h-12 font-bold shadow-lg hover:bg-[#df8125] hover:text-white transition-colors duration-200 flex items-center justify-center text-2xl"
-              onClick={() => setSelected(null)}
-              aria-label="Close modal"
-            >
-              ×
-            </button>
-          </div>
+          {/* Load More / Load Less Buttons */}
+          {(hasMore || displayCount > 12) && (
+            <div className="text-center mt-8 flex flex-col items-center gap-2">
+              {hasMore && (
+                <button
+                  onClick={loadMore}
+                  className="px-8 py-3 bg-[#df8125] text-white rounded-full font-semibold hover:bg-[#c87120] transition-colors shadow-md hover:shadow-lg"
+                >
+                  Load More Images
+                </button>
+              )}
+              {displayCount > 12 && (
+                <button
+                  onClick={() => setDisplayCount(12)}
+                  className="px-8 py-3 bg-gray-200 text-[#df8125] rounded-full font-semibold hover:bg-gray-300 transition-colors shadow-md hover:shadow-lg"
+                >
+                  Load Less
+                </button>
+              )}
+              <p className="text-gray-600 text-sm mt-3">
+                Showing {displayCount} of {images.length} images
+              </p>
+            </div>
+          )}
+
+          {/* All Loaded Message */}
+          {!hasMore && images.length > 12 && (
+            <div className="text-center mt-8">
+              <p className="text-gray-600 text-sm">
+                All {images.length} images loaded
+              </p>
+            </div>
+          )}
         </div>
-      )}
-    </div>
+
+        {/* Fullscreen Modal */}
+        {selected && (
+          <div 
+            className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+            onClick={() => setSelected(null)}
+          >
+            <div 
+              className="relative max-w-6xl max-h-[95vh] w-full"
+              onClick={e => e.stopPropagation()}
+            >
+              {/* Image */}
+              <img
+                src={selected}
+                alt="Full size"
+                className="max-w-full max-h-[95vh] w-auto h-auto mx-auto object-contain rounded-lg"
+              />
+              
+              {/* Close Button */}
+              <button
+                onClick={() => setSelected(null)}
+                className="absolute top-2 right-2 sm:top-4 sm:right-4 w-10 h-10 sm:w-12 sm:h-12 bg-white/90 backdrop-blur-sm text-[#df8125] rounded-full flex items-center justify-center hover:bg-white transition-colors shadow-xl"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5 sm:w-6 sm:h-6" />
+              </button>
+
+              {/* Image Info */}
+              <div className="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-sm text-white rounded-lg p-3 sm:p-4">
+                <p className="text-sm sm:text-base font-semibold">{albums[activeAlbum].name}</p>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </>
   );
 }
