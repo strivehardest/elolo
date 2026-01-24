@@ -231,9 +231,10 @@ export default function PastEvents() {
                 <Image
                   src={currentEvent.image}
                   alt={currentEvent.title}
-                  width={1200}
-                  height={800}
-                  className="object-contain w-full h-auto max-h-[80vh]"
+                  width={600}
+                  height={400}
+                  sizes="(max-width: 600px) 90vw, (max-width: 1024px) 70vw, 600px"
+                  className="object-contain w-full h-auto max-h-[60vh] sm:max-h-[80vh] event-image-mobile"
                   priority
                 />
               </div>
@@ -254,32 +255,46 @@ export default function PastEvents() {
           {/* Main Carousel */}
           <div className="relative mb-12">
             {/* Event Card */}
-            <div className="bg-gray-50 rounded-2xl overflow-hidden border-2 border-gray-200 shadow-lg">
+            <div className="bg-gray-50 rounded-2xl overflow-hidden border-2 border-gray-200 shadow-lg max-w-md mx-auto md:max-w-full">
               <div className="grid md:grid-cols-2 gap-0">
                 {/* Image Section */}
-                <div className="relative h-96 md:h-auto bg-gray-200">
-                  <Image
-                    src={currentEvent.image}
-                    alt={currentEvent.title}
-                    fill
-                    className="object-cover cursor-pointer"
-                    priority
-                    onClick={() => setShowModal(true)}
-                  />
+                <div className="relative h-44 xs:h-52 sm:h-72 md:h-96 bg-gray-200 flex items-center justify-center group">
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Image
+                      src={currentEvent.image}
+                      alt={currentEvent.title}
+                      fill
+                      sizes="(max-width: 600px) 90vw, (max-width: 1024px) 50vw, 600px"
+                      className="object-cover cursor-pointer rounded-xl border-4 border-white shadow event-image-mobile"
+                      priority
+                      onClick={() => setShowModal(true)}
+                    />
+                    {/* Click to view overlay */}
+                    <button
+                      className="absolute inset-0 flex items-end justify-center bg-black/0 group-hover:bg-black/30 transition group-hover:backdrop-blur-sm rounded-xl focus:outline-none"
+                      style={{ pointerEvents: 'none' }}
+                      tabIndex={-1}
+                      aria-hidden="true"
+                    >
+                      <span className="mb-3 px-3 py-1 bg-white/90 text-[#df8125] text-xs font-semibold rounded shadow group-hover:opacity-100 opacity-0 transition-opacity duration-200">
+                        Click to view
+                      </span>
+                    </button>
+                  </div>
                   {/* Navigation Arrows on Image */}
                   <button
                     onClick={prevSlide}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#df8125] p-3 rounded-full shadow-lg transition-all z-10"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#df8125] p-2 rounded-full shadow-lg transition-all z-10"
                     aria-label="Previous event"
                   >
-                    <ChevronLeft className="w-6 h-6" />
+                    <ChevronLeft className="w-5 h-5" />
                   </button>
                   <button
                     onClick={nextSlide}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#df8125] p-3 rounded-full shadow-lg transition-all z-10"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#df8125] p-2 rounded-full shadow-lg transition-all z-10"
                     aria-label="Next event"
                   >
-                    <ChevronRight className="w-6 h-6" />
+                    <ChevronRight className="w-5 h-5" />
                   </button>
                 </div>
 
@@ -317,15 +332,15 @@ export default function PastEvents() {
             </div>
 
             {/* Dots Indicator */}
-            <div className="flex justify-center mt-8 gap-3">
+            <div className="flex justify-center mt-6 gap-2">
               {events.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`transition-all rounded-full ${
+                  className={`transition-all rounded-full border-2 focus:outline-none focus:ring-2 focus:ring-[#df8125] ${
                     index === currentIndex
-                      ? 'w-12 h-3 bg-[#df8125]'
-                      : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
+                      ? 'w-4 h-4 bg-[#df8125] border-[#df8125] shadow-lg'
+                      : 'w-3 h-3 bg-gray-300 border-gray-300 hover:bg-[#df8125]/60 hover:border-[#df8125]'
                   }`}
                   aria-label={`Go to image ${index + 1}`}
                 />

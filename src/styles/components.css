@@ -1,0 +1,6 @@
+
+/* Restrict event image size on mobile */
+.event-image-mobile {
+	max-width: 95vw;
+	max-height: 220px;
+}
