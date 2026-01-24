@@ -8,6 +8,16 @@ const albums = [
     images: Array.from({ length: 45 }, (_, i) => `/gallery/vr/vr1 (${i + 1}).jpeg`),
   },
   {
+    name: 'Chaplaincy Ministration',
+    images: [
+      ...Array.from({ length: 31 }, (_, i) => `/gallery/chaplaincy/chaplain-1 (${i + 1}).JPG`),
+      '/gallery/chaplaincy/chaplain-1 (38).jpg',
+      ...Array.from({ length: 7 }, (_, i) => `/gallery/chaplaincy/chaplain-1 (${i + 39}).JPG`),
+      '/gallery/chaplaincy/chaplain-1 (40).jpg',
+      ...Array.from({ length: 14 }, (_, i) => `/gallery/chaplaincy/chaplain-1 (${i + 41}).JPG`)
+    ],
+  },
+  {
     name: '2nd Accra Worship and Prayer Conference',
     images: ['/gallery/accra-worship1.jpg'],
   },
@@ -22,10 +32,6 @@ const albums = [
   {
     name: "Visitation to Old Students' of Biriwa Technical Institute Studying at TTU and CCTU",
     images: ['/gallery/biriwa-visitation1.jpg'],
-  },
-  {
-    name: 'Chaplaincy Ministration',
-    images: ['/gallery/chaplaincy1.jpg', '/gallery/chaplaincy2.jpg', '/gallery/chaplaincy3.jpg', '/gallery/chaplaincy4.jpg'],
   },
 ];
 
