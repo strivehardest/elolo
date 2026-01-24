@@ -122,7 +122,9 @@ export default function PastEvents() {
       location: "Google Meet",
       attendees: "150+",
       description: "An online seminar exploring the integration of AI in pedagogical practices within TVET.",
-      image: "/events/past13.jpeg",
+      image: "/events/past13.jpeg"
+    },
+    {
       id: 14,
       title:"Cape Coast Convocation - Talented for Impact",
       date: "12th May, 2018",
@@ -326,7 +328,7 @@ export default function PastEvents() {
                             ? 'w-12 h-3 bg-[#df8125]'
                             : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
                         }`}
-                        aria-label={`Go to image ${index + 1}`}
+                        aria-label={`Go to event ${index + 1}`}
                       />
                     ))}
                   </div>
