@@ -317,8 +317,8 @@ export default function PastEvents() {
                     </div>
                   </div>
 
-                  {/* Dots Indicator */}
-                  <div className="flex justify-center mt-8 gap-3">
+                  {/* Dots Indicator (hidden on mobile, visible md+) */}
+                  <div className="hidden md:flex justify-center mt-8 gap-3">
                     {events.map((_, index) => (
                       <button
                         key={index}
