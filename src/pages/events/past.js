@@ -215,7 +215,12 @@ export default function PastEvents() {
           content: 'Elolo Agbleke, events, past events, workshops, conferences, networking, TVET, Ghana, professional development, community gatherings'
         }]}
       />
-      <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <div
+        className="min-h-screen bg-white px-1 sm:px-6 lg:px-8 flex flex-col"
+        style={{
+          minHeight: '100dvh',
+        }}
+      >
         {/* Modal for full image */}
         {showModal && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setShowModal(false)}>
@@ -241,7 +246,7 @@ export default function PastEvents() {
             </div>
           </div>
         )}
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto flex flex-col" style={{minHeight: 'calc(100dvh - 120px)'}}>
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#030202]">
@@ -253,9 +258,9 @@ export default function PastEvents() {
           </div>
 
           {/* Main Carousel */}
-          <div className="relative mb-12">
+          <div className="relative mb-12 flex flex-col items-center justify-center flex-1">
             {/* Event Card */}
-            <div className="bg-gray-50 rounded-2xl overflow-hidden border-2 border-gray-200 shadow-lg max-w-md mx-auto md:max-w-full">
+            <div className="bg-gray-50 rounded-2xl overflow-hidden border-2 border-gray-200 shadow-lg max-w-[98vw] w-full mx-auto md:max-w-full my-4 sm:my-6" style={{marginTop: 'max(1.5rem, env(safe-area-inset-top, 0px))', marginBottom: 'max(2.5rem, env(safe-area-inset-bottom, 0px))'}}>
               <div className="grid md:grid-cols-2 gap-0">
                 {/* Image Section */}
                 <div className="relative h-44 xs:h-52 sm:h-72 md:h-96 bg-gray-200 flex items-center justify-center group">
@@ -332,16 +337,17 @@ export default function PastEvents() {
             </div>
 
             {/* Dots Indicator */}
-            <div className="flex justify-center mt-6 gap-2">
+            <div className="flex justify-center mt-8 mb-2 gap-2" style={{marginBottom: 'max(2.5rem, env(safe-area-inset-bottom, 0px))'}}>
               {events.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`transition-all rounded-full border-2 focus:outline-none focus:ring-2 focus:ring-[#df8125] ${
+                  className={`transition-all rounded-full border-2 focus:outline-none focus:ring-2 focus:ring-[#df8125] shadow-md ${
                     index === currentIndex
-                      ? 'w-4 h-4 bg-[#df8125] border-[#df8125] shadow-lg'
-                      : 'w-3 h-3 bg-gray-300 border-gray-300 hover:bg-[#df8125]/60 hover:border-[#df8125]'
+                      ? 'w-5 h-5 bg-gradient-to-tr from-[#df8125] via-[#ffb347] to-[#df8125] border-[#df8125] shadow-lg scale-110'
+                      : 'w-3 h-3 bg-gray-200 border-gray-300 hover:bg-[#df8125]/60 hover:border-[#df8125] opacity-80'
                   }`}
+                  style={index === currentIndex ? {boxShadow: '0 0 0 3px #fff, 0 2px 8px 0 #df8125'} : {}}
                   aria-label={`Go to image ${index + 1}`}
                 />
               ))}
