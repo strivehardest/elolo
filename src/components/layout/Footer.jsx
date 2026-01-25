@@ -1,8 +1,16 @@
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Footer() {
+  const router = useRouter();
+  const isActive = (href) => {
+    // For root, match exactly; for others, check if path starts with href
+    if (href === "/") return router.pathname === "/";
+    return router.pathname === href || router.pathname.startsWith(href + "/");
+  };
   return (
     <footer className="relative bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white">
 
@@ -148,7 +156,9 @@ export default function Footer() {
                     <li key={idx}>
                       <Link
                         href={link.href}
-                        className="text-gray-300 hover:text-[#df8125] transition-colors"
+                        className={
+                          `${isActive(link.href) ? "text-[#df8125] font-bold" : "text-gray-300"} hover:text-[#df8125] transition-colors`
+                        }
                       >
                         {link.label}
                       </Link>

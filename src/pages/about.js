@@ -152,21 +152,7 @@ const AboutPage = () => {
                   He is happily married to Lady Judith Sena Agbleke, a fellow TVET professional, and together they are raising three gifted children, namely Etornam, Elikem, and Esinam.
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a 
-                  href="/services" 
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold text-lg bg-yellow-600 text-white hover:bg-yellow-700 transition-all shadow-lg"
-                >
-                  Explore Services
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
-                <a 
-                  href="/contact" 
-                  className="inline-flex items-center justify-center border-2 border-yellow-600 rounded-xl font-bold text-lg px-8 py-4 text-yellow-600 hover:bg-yellow-600 hover:text-white transition-all"
-                >
-                  Let's Connect
-                </a>
-              </div>
+
             </div>
           </div>
 
@@ -291,34 +277,30 @@ const AboutPage = () => {
             </div>
           </div>
 
-          {/* CTA Section */}
-          <div className="py-20">
-            <div className="relative rounded-3xl overflow-hidden min-h-[400px] flex items-center">
-              <img
-                src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=1169&auto=format&fit=crop"
-                alt="Connect background"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-yellow-600/85"></div>
-              <div className="relative z-10 w-full text-center text-white px-8 py-16">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Connect?</h2>
-                <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed">
-                  Let's work together to create meaningful impact through education, technology, and leadership development.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="/services" 
-                    className="inline-flex items-center justify-center px-10 py-5 rounded-xl font-bold text-xl bg-white text-yellow-600 hover:bg-gray-100 transition-all shadow-lg"
-                  >
-                    Explore My Services
-                  </a>
-                  <a 
-                    href="/contact" 
-                    className="inline-flex items-center justify-center border-2 border-white rounded-xl font-bold text-xl px-10 py-5 text-white hover:bg-white hover:text-yellow-600 transition-all"
-                  >
-                    Get In Touch
-                  </a>
-                </div>
+          {/* CTA Section - Styled like Events CTA */}
+          <div className="mt-16 flex justify-center">
+            <div className="bg-[#df8125] rounded-2xl shadow-lg px-10 py-12 text-center max-w-2xl w-full">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Connect?
+              </h2>
+              <p className="text-lg text-white/90 mb-6">
+                Let's work together to create meaningful impact through education, technology, and leadership development.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="/services"
+                  className="inline-flex items-center gap-3 bg-orange-400 text-[#ffffff] font-bold px-8 py-4 rounded-xl text-lg shadow-md hover:bg-white/90 hover:text-[#b96a1a] transition-colors"
+                >
+                  Explore My Services
+                  <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
+                </a>
+                <a
+                  href="/contact"
+                  className="inline-flex items-center gap-3 border-2 border-white rounded-xl font-bold text-lg px-8 py-4 text-white hover:bg-white hover:text-[#b96a1a] transition-colors"
+                >
+                  Get In Touch
+                  <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
+                </a>
               </div>
             </div>
           </div>

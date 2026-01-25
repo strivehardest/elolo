@@ -1,3 +1,7 @@
+/* Utility class for Onest font */
+.font-onest {
+  font-family: 'Onest', Arial, sans-serif;
+}
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -39,8 +43,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Typography */
-/* All headings use Ruluko */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bricolage Grotesque', Arial, sans-serif;
   font-weight: 700;

@@ -264,7 +264,7 @@ const TVETFoundationPage = () => {
           <div className="text-center mb-12">
             <h2
               className="text-4xl md:text-5xl font-bold text-[#030202] mb-6"
-              style={{ fontFamily: "'Ruluko', Arial, sans-serif" }}
+              style={{ fontFamily: "'Bricolage Grotesque', 'Montserrat', Arial, sans-serif" }}
             >
               Innovative Approaches
             </h2>

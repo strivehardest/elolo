@@ -21,6 +21,7 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
   const menuItems = [
     { name: 'Home', href: '' },
     { name: 'About', href: 'about' },
+    { name: 'Services', href: 'services' },
     {
       name: 'Groups',
       href: 'groups',
@@ -41,11 +42,9 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
         { name: 'Upcoming Events', href: 'events/upcoming' },
         { name: 'Workshops', href: 'events/workshops' },
         { name: 'Conferences', href: 'events/conferences' },
-        { name: 'Networking Events', href: 'events/networking' },
         { name: 'Past Events', href: 'events/past' }
       ]
     },
-    { name: 'Services', href: 'services' },
     {
       name: 'Resources',
       href: 'resources',

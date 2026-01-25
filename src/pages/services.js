@@ -128,7 +128,7 @@ export default function Services() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Our Services
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto font-opensans leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto font-onest leading-relaxed">
             We offer a range of professional services designed to empower
             individuals and businesses to reach their full potential.
           </p>
@@ -155,7 +155,7 @@ export default function Services() {
               
               <ul className="space-y-3 mb-5">
                 {service.details.map((point, i) => (
-                  <li key={i} className="flex items-start gap-3 text-gray-700 font-opensans">
+                  <li key={i} className="flex items-start gap-3 text-gray-700 font-onest">
                     <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#ff8125]" aria-hidden="true" />
                     <span className="leading-relaxed">{point}</span>
                   </li>
@@ -172,7 +172,7 @@ export default function Services() {
                     {service.clients.map((client, j) => (
                       <span 
                         key={j} 
-                        className="px-3 py-1.5 rounded-full text-sm font-medium border font-opensans"
+                        className="px-3 py-1.5 rounded-full text-sm font-medium border font-onest"
                         style={{ 
                           backgroundColor: `${brandColor}08`, 
                           borderColor: `${brandColor}30`,
@@ -197,7 +197,7 @@ export default function Services() {
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                 Why Choose Us?
               </h2>
-              <p className="text-lg sm:text-xl text-gray-600 font-opensans max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-600 font-onest max-w-2xl mx-auto leading-relaxed">
                 We stand out because of our commitment to quality, innovation, and
                 client success.
               </p>
@@ -218,7 +218,7 @@ export default function Services() {
                   <h3 className="text-xl font-bold mb-3 text-gray-900">
                     {benefit.title}
                   </h3>
-                  <p className="text-gray-600 font-opensans leading-relaxed">
+                  <p className="text-gray-600 font-onest leading-relaxed">
                     {benefit.description}
                   </p>
                 </div>
@@ -227,22 +227,23 @@ export default function Services() {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="mt-16 lg:mt-20 text-center">
-          <a
-            href="/contact"
-            className="inline-flex items-center gap-3 font-semibold py-4 px-8 rounded-xl shadow-lg transition-all duration-300 font-manrope text-white hover:shadow-2xl hover:scale-105 group"
-            style={{
-              backgroundColor: brandColor,
-              boxShadow: `0 10px 30px ${brandColor}40`,
-            }}
-          >
-            Book a Service
-            <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
-          <p className="mt-4 text-sm text-gray-500 font-opensans">
-            Ready to transform your organization? Let's start the conversation.
-          </p>
+        {/* CTA - Styled like Past Events */}
+        <div className="mt-16 flex justify-center">
+          <div className="bg-[#df8125] rounded-2xl shadow-lg px-10 py-12 text-center max-w-2xl w-full">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Book a Service
+            </h2>
+            <p className="text-lg text-white/90 mb-6 font-onest">
+              Ready to transform your organization? Let's start the conversation.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-3 bg-orange-400 text-[#ffffff] font-bold px-8 py-4 rounded-xl text-lg shadow-md hover:bg-white/90 hover:text-[#b96a1a] transition-colors"
+            >
+              Book Now
+              <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
+            </a>
+          </div>
         </div>
       </div>
       </section>

@@ -150,24 +150,16 @@ const HomePage = () => {
               <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-tight mb-8 tracking-tight">
                 Building Practical Skills Systems for TVET through Technology, Design, and Capacity Building
               </h1>
-
-
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* Learn More CTA Button */}
+              <div className="w-full max-w-xs sm:max-w-none mx-auto flex justify-center mt-4">
                 <a
-                  href="/about"
-                  className="px-10 py-4 bg-[#df8125] text-white font-semibold text-lg rounded-lg hover:bg-[#c67320] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  href="/services"
+                  className="inline-flex items-center gap-3 bg-orange-400 text-[#ffffff] font-bold w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-base sm:text-lg shadow-md hover:bg-white/90 hover:text-[#b96a1a] transition-colors justify-center"
                 >
-                  LEARN MORE
-                </a>
-                <a
-                  href="/contact"
-                  className="px-10 py-4 border-2 border-white text-white font-semibold text-lg rounded-lg hover:bg-white hover:text-[#df8125] transition-all duration-300"
-                >
-                  CONTACT ME
+                  Learn More
+                  <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>
-
             </div>
           </div>
 
@@ -373,7 +365,7 @@ const HomePage = () => {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src="/images/hero/hero4.jpg"
+              src="/images/hero/hero2.jpg"
               alt=""
               className="w-full h-full object-cover"
             />
