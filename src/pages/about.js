@@ -114,22 +114,42 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Profile Section */}
           <div className="py-20 grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
+            {/* Image Column - always first */}
+            <div className="order-1 flex justify-center mb-10 lg:mb-0">
+              <div 
+                className="relative h-[400px] w-[320px] md:h-[500px] md:w-[400px] rounded-3xl overflow-hidden shadow-2xl cursor-pointer group"
+                onClick={() => setShowModal(true)}
+              >
+                <img
+                  src="/images/about/elolo-portrait.jpg"
+                  alt="Elolo Agbleke"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </div>
+            </div>
+
+            {/* Text Column - always second */}
+            <div className="order-2">
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
                 A Purpose-Driven Leader
               </h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed mb-10">
+                <h3 className="text-2xl font-bold text-yellow-700 mb-4">Building Practical Skills Systems for TVET through Technology, Design, and Capacity Building</h3>
                 <p>
-                  Elolo Agbleke is an experienced TVET practitioner, digital innovator, and chaplain with over 14 years of expertise in ICT skills training, public TVET administration, human resource management, and institutional chaplaincy.
+                  Elolo Agbleke is an experienced TVET practitioner, digital educator, and chaplain with over 15 years of expertise in ICT skills training, educational technology integration, public TVET administration, human resource management, and institutional chaplaincy. He is passionate about advancing workforce development through technology integration and education reform, and is widely regarded as an influential voice in Ghana’s TVET ecosystem. He envisions a leadership role in techno-pedagogical design for Africa's TVET sector, spearheading reforms in curriculum development, digital learning, and instructional design.
                 </p>
                 <p>
-                  Currently, Elolo serves as Principal Manager at the Ghana TVET Service Headquarters and Chief Operating Officer of the Keta Institute of Technology. He is also the Founder & CEO of The TVET Foundation Ghana.
+                  Elolo currently serves as Digital Learning Specialist/EduTech Principal Manager at the Ghana TVET Service Headquarters (EduTech Division) and Chief Operating Officer of the Keta Institute of Technology. Prior to this, he held the position of Principal Manager in the Human Resource Management and Development Division (HRMD), where he was responsible for policy analysis and IT integration. Additionally, he served as Principal Training Officer at Biriwa Technical Institute, teaching ICT and Computer Hardware Servicing for over 12 years. During his tenure, he trained over 2,500 students, managed school data and digital resources, and led multiple community engagements and educational projects.
                 </p>
                 <p>
-                  As a conference host, digital tutor, and educator, Elolo continues to pioneer impactful solutions that bridge education, technology, faith, and enterprise.
+                  He is also the Founder & CEO of The TVET Foundation Ghana, The ASSET Initiative, The Workforce Development Institute, and the Association of Chaplains in Education (Africa), driving initiatives that empower learners and strengthen institutions.
                 </p>
                 <p>
-                  He is happily married to Lady Judith Sena Agbleke, and together they are raising three children—Etornam, Elikem, and Esinam.
+                  As a conference host, technology educator, TVET advocate, Chaplain, and church elder, Elolo continues to pioneer impactful and sustainable solutions that bridge education, technology, faith, and enterprise.
+                </p>
+                <p>
+                  He is happily married to Lady Judith Sena Agbleke, a fellow TVET professional, and together they are raising three gifted children, namely Etornam, Elikem, and Esinam.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -146,20 +166,6 @@ const AboutPage = () => {
                 >
                   Let's Connect
                 </a>
-              </div>
-            </div>
-
-            <div className="order-1 lg:order-2">
-              <div 
-                className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl cursor-pointer group"
-                onClick={() => setShowModal(true)}
-              >
-                <img
-                  src="/images/about/elolo-portrait.jpg"
-                  alt="Elolo Agbleke"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
             </div>
           </div>

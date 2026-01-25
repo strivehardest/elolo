@@ -82,6 +82,21 @@ const ContactPage = () => {
                       </p>
                     </div>
                   </div>
+                    {/* Office Location Address */}
+                    <div className="flex items-start">
+                      <svg className="h-6 w-6 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" /></svg>
+                      <div>
+                        <h3 className="font-semibold mb-1">Office Location</h3>
+                        <address className="not-italic text-white">
+                          <strong>The TVET Info Hub:</strong><br />
+                          Awudome Estates<br />
+                          North Kaneshie<br />
+                          Klotey Street<br />
+                          GH-214-1832<br />
+                          Accra.
+                        </address>
+                      </div>
+                    </div>
                   <div className="flex items-start">
                     <Phone className="h-6 w-6 mr-4 mt-1 flex-shrink-0" />
                     <div>

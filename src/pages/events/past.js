@@ -333,6 +333,24 @@ export default function PastEvents() {
                     ))}
                   </div>
                 </div>
+                {/* Upcoming Events CTA Section - moved to bottom */}
+                <div className="mt-16 flex justify-center">
+                  <div className="bg-[#df8125] rounded-2xl shadow-lg px-10 py-12 text-center max-w-2xl w-full">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                      See Upcoming Events
+                    </h2>
+                    <p className="text-lg text-white/90 mb-6">
+                      Interested in attending upcoming events? Stay tuned for the latest updates and announcements.
+                    </p>
+                    <a
+                      href="/events/upcoming"
+                      className="inline-flex items-center gap-3 bg-orange-400 text-[#ffffff] font-bold px-8 py-4 rounded-xl text-lg shadow-md hover:bg-white/90 hover:text-[#b96a1a] transition-colors"
+                    >
+                      Upcoming Events
+                      <ChevronRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </>

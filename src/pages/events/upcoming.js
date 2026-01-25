@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Calendar, Users, MapPin } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar, Users, MapPin, CheckCircle } from 'lucide-react';
 import SEOHead from '../../components/seo/SEOHead';
 
 export default function UpcomingEvents() {
@@ -85,15 +85,7 @@ export default function UpcomingEvents() {
           </div>
         )}
         <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#030202]">
-              Upcoming Events
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Stay tuned for our upcoming events, workshops, and conferences.
-            </p>
-          </div>
+
 
           {/* Main Carousel */}
           <div className="relative mb-12">
@@ -171,6 +163,55 @@ export default function UpcomingEvents() {
                   aria-label={`Go to event ${index + 1}`}
                 />
               ))}
+            </div>
+          </div>
+
+          {/* Upcoming Projects Section - between carousel and CTA */}
+          <div className="mb-12 max-w-3xl mx-auto bg-yellow-50 border-l-4 border-[#df8125] rounded-xl p-8 shadow">
+            <h2 className="text-2xl font-bold text-[#df8125] mb-4">Upcoming Projects</h2>
+            <ul className="space-y-3">
+              {[
+                'TVET Info Hub',
+                'VR Experience Labs',
+                'Carpentry Competition',
+                'TVET Radio/ Career Fm',
+                'The TVET GDP Season I',
+                'TVET Recruitment Centre',
+                'Bible Quiz for TVET Institutes',
+                'SkitWALL Project from Kenya',
+                'PlayVR Lab Project from India',
+                'TVET Innovation & Creative Hub',
+                'TVET WELL & Placement Centre',
+                'MilleaLab Project from Indonesia',
+                'The 3rd Accra TVET Empowerment Conference',
+                'Website Designing Masterclass for TVET Students',
+                'National Chaplaincy Training with Accra Bible School',
+                'Regional Digital Skills Masterclass for TVET Regional Directors with Done by Us',
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3 text-lg text-gray-800">
+                  <CheckCircle className="w-6 h-6 text-[#df8125] mt-1 flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Past Events CTA Section - stays at bottom */}
+          <div className="mt-16 flex justify-center">
+            <div className="bg-[#df8125] rounded-2xl shadow-lg px-10 py-12 text-center max-w-2xl w-full">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                See Past Events
+              </h2>
+              <p className="text-lg text-white/90 mb-6">
+                Explore highlights from our past events, workshops, and conferences.
+              </p>
+              <a
+                href="/events/past"
+                className="inline-flex items-center gap-3 bg-orange-400 text-[#ffffff] font-bold px-8 py-4 rounded-xl text-lg shadow-md hover:bg-white/90 hover:text-[#b96a1a] transition-colors"
+              >
+                Past Events
+                <ChevronRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
+              </a>
             </div>
           </div>
         </div>
