@@ -135,7 +135,7 @@ const AboutPage = () => {
                 A Purpose-Driven Leader
               </h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed mb-10">
-                <h3 className="text-2xl font-bold text-yellow-700 mb-4">Building Practical Skills Systems for TVET through Technology, Design, and Capacity Building</h3>
+                <h3 className="text-2xl font-bold mb-4" style={{ color: '#df8125' }}>Building Practical Skills Systems for TVET through Technology, Design, and Capacity Building</h3>
                 <p>
                   Elolo Agbleke is an experienced TVET practitioner, digital educator, and chaplain with over 15 years of expertise in ICT skills training, educational technology integration, public TVET administration, human resource management, and institutional chaplaincy. He is passionate about advancing workforce development through technology integration and education reform, and is widely regarded as an influential voice in Ghana’s TVET ecosystem. He envisions a leadership role in techno-pedagogical design for Africa's TVET sector, spearheading reforms in curriculum development, digital learning, and instructional design.
                 </p>
