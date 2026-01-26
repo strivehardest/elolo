@@ -20,12 +20,12 @@ import {
 
 const heroImages = [
   '/images/hero/hero2.jpg',
-  '/images/hero/hero5.jpg',
-  '/images/hero/hero6.jpg',
-  '/images/hero/hero7.jpeg',
   '/images/hero/hero8.JPG',
+  '/images/hero/hero6.jpg',
+  '/images/hero/hero5.jpg',
+  '/images/hero/hero7.jpeg',
   '/images/hero/hero9.JPG',
-  '/images/hero/hero10.JPG',
+  '/images/hero/hero13.jpg',
   '/images/hero/hero1.jpeg',
 
 ];
@@ -145,13 +145,13 @@ const HomePage = () => {
 
           {/* Hero Content - Centered Layout */}
           <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto mt-40 md:mt-56">
               {/* Main Tagline */}
-              <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-tight mb-8 tracking-tight">
+              <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-white leading-tight mb-8 tracking-tight">
                 Building Practical Skills Systems for TVET through Technology, Design, and Capacity Building
               </h1>
-              {/* Learn More CTA Button */}
-              <div className="w-full max-w-xs sm:max-w-none mx-auto flex justify-center mt-4">
+              {/* Learn More CTA Button - moved below tagline */}
+              <div className="w-full max-w-xs sm:max-w-none mx-auto flex justify-center mt-8">
                 <a
                   href="/services"
                   className="inline-flex items-center gap-3 bg-orange-400 text-[#ffffff] font-bold w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-base sm:text-lg shadow-md hover:bg-white/90 hover:text-[#b96a1a] transition-colors justify-center"
