@@ -97,7 +97,7 @@ const AboutPage = () => {
         {/* Hero Section */}
         <div className="relative h-[340px] md:h-[420px] w-full flex items-center justify-center overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="./preaching.jpg"
             alt="Training, technology, or speaking event"
             className="absolute inset-0 w-full h-full object-cover object-center z-0"
             style={{ filter: 'brightness(0.65)' }}
@@ -113,9 +113,9 @@ const AboutPage = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Profile Section */}
-          <div className="py-20 grid lg:grid-cols-2 gap-16 items-center">
+          <div className="py-20 grid lg:grid-cols-2 gap-16 items-start">
             {/* Image Column - always first */}
-            <div className="order-1 flex justify-center mb-10 lg:mb-0">
+            <div className="order-1 flex justify-center lg:mb-0">
               <div 
                 className="relative h-[400px] w-[320px] md:h-[500px] md:w-[400px] rounded-3xl overflow-hidden shadow-2xl cursor-pointer group"
                 onClick={() => setShowModal(true)}
