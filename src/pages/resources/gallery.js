@@ -82,7 +82,18 @@ const albums = [
   },
   {
     name: "Visitation to Old Students' of Biriwa Technical Institute Studying at TTU and CCTU",
-    images: ['/gallery/biriwa-visitation1.jpg'],
+    images: ['/gallery/biriwa/biriwa (1).JPG',
+      '/gallery/biriwa/biriwa (2).JPG',
+      '/gallery/biriwa/biriwa (3).JPG',
+      '/gallery/biriwa/biriwa (4).JPG',
+      '/gallery/biriwa/biriwa (5).JPG',
+      '/gallery/biriwa/biriwa (6).JPG',
+      '/gallery/biriwa/biriwa (7).JPG',
+      '/gallery/biriwa/biriwa (8).JPG',
+      '/gallery/biriwa/biriwa (9).JPG',
+      '/gallery/biriwa/biriwa (10).JPG',
+      '/gallery/biriwa/biriwa (11).JPG',
+    ]
   },
   {
     name: 'Hogbetsotsoza Celebration',
