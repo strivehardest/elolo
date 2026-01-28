@@ -27,7 +27,8 @@ const heroImages = [
   '/images/hero/hero9.JPG',
   '/images/hero/hero13.jpg',
   '/images/hero/hero1.jpeg',
-
+  '/images/hero/hero (1).jpg',
+  '/images/hero/hero (2).jpg',
 ];
 
 const coreAreas = [
