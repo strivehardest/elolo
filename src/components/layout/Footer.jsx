@@ -24,8 +24,8 @@ export default function Footer() {
           {/* Logo & About */}
           <div className="lg:col-span-4">
             <div className="flex justify-center lg:justify-start mb-6">
-              <Link href="https://eloloagbleke.com">
-                <div className="relative h-12 w-32 sm:h-14 sm:w-40">
+              <Link href="https://eloloagbleke.com" className="block">
+                <div className="relative h-20 w-48 sm:h-24 sm:w-56">
                   <Image
                     src="/logo1.png"
                     alt="Elolo Agbleke Logo"
