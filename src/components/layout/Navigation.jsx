@@ -116,7 +116,7 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
               className="focus:outline-none"
               aria-label="Go to home"
             >
-              <div className="relative h-10 w-40">
+              <div className="relative h-16 w-56">
                 <Image
                   src="/logo.png"
                   alt="Elolo Agbleke logo"
