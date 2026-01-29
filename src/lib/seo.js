@@ -54,11 +54,11 @@ export const defaultSEO = {
 // Page-specific SEO configurations
 export const pagesSEO = {
   home: {
-    title: `${siteName} | Building Community Connections`,
+    title: `${siteName} | Building TVET Systems`,
     description: 'Join our vibrant community focused on professional development, networking, and meaningful connections. Discover groups, events, and resources designed to foster growth.',
     canonical: siteUrl,
     openGraph: {
-      title: `${siteName} | Building Community Connections`,
+      title: `${siteName} | Building TVET Systems`,
       description: 'Join our vibrant community focused on TVET, technical and vocational education, professional development, networking, and meaningful connections.',
       url: siteUrl,
     },

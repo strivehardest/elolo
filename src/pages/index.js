@@ -21,7 +21,7 @@ import {
 const heroImages = [
   '/images/hero/hero2.jpg',
   '/images/hero/hero8.JPG',
-  '/images/hero/hero6.jpg',
+  '/images/hero/hero.jpg',
   '/images/hero/hero5.jpg',
   '/images/hero/hero7.jpeg',
   '/images/hero/hero9.JPG',
