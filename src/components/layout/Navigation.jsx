@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { Menu, X, ChevronDown, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
@@ -8,14 +8,29 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [scrolled, setScrolled] = useState(false);
+  const [scrollingUp, setScrollingUp] = useState(false);
+  const [atTop, setAtTop] = useState(true);
+  const lastScrollY = useRef(0);
   const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 10);
+      setAtTop(currentScrollY < 10);
+      if (currentScrollY < 10) {
+        setScrollingUp(false);
+      } else {
+        setScrollingUp(currentScrollY < lastScrollY.current);
+      }
+      lastScrollY.current = currentScrollY;
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+      // Set initial state
+      handleScroll();
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
   }, []);
 
   const menuItems = [
@@ -72,42 +87,44 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled ? 'bg-white shadow-sm' : 'bg-white'
-        }`}
+        } ${scrollingUp ? 'nav-shrink' : ''}`}
         style={{ fontFamily: "var(--font-heading)" }}
       >
         {/* Social, Contact (Top Bar) */}
-        <div className="w-full bg-gray-50 border-b border-gray-200">
-          <div className="max-w-7xl mx-auto flex flex-col items-center justify-center px-4 py-2 text-xs text-gray-700 md:flex-row md:justify-between md:items-center">
-            <div className="flex flex-row justify-between w-full md:w-auto md:flex-row md:items-center md:gap-3">
-              <a href="tel:+233243623269" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors">
-                <Phone className="w-4 h-4" /> +233 24 362 3269
-              </a>
-              <a href="mailto:info@eloloagbleke.com" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors">
-                <Mail className="w-4 h-4" /> info@eloloagbleke.com
-              </a>
-            </div>
-            <div className="hidden md:flex items-center gap-2 mt-2 md:mt-0">
-              <a href="https://web.facebook.com/EldChapEl" target="_blank" rel="noopener noreferrer" title="Facebook" className="hover:scale-110 transition-transform">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style={{ width: 20, height: 20 }} />
-              </a>
-              <a href="https://x.com/elolo2000?s=11" target="_blank" rel="noopener noreferrer" title="X" className="hover:scale-110 transition-transform">
-                <img src="https://cdn.simpleicons.org/x/000000" alt="X" style={{ width: 14, height: 14 }} />
-              </a>
-              <a href="https://www.youtube.com/@eloloagbleke746" target="_blank" rel="noopener noreferrer" title="YouTube" className="hover:scale-110 transition-transform">
-                <img src="https://cdn.simpleicons.org/youtube/ff0000" alt="YouTube" style={{ width: 20, height: 20 }} />
-              </a>
-              <a href="https://gh.linkedin.com/in/elolo-kwabla-magnus-agbleke-69693b2b" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="hover:scale-110 transition-transform">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style={{ width: 14, height: 14 }} />
-              </a>
-              <a href="https://wa.me/233243623269" target="_blank" rel="noopener noreferrer" title="WhatsApp" className="hover:scale-110 transition-transform">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: 20, height: 20 }} />
-              </a>
-              <a href="https://t.me/EldChapEl" target="_blank" rel="noopener noreferrer" title="Telegram" className="hover:scale-110 transition-transform">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style={{ width: 14, height: 14 }} />
-              </a>
+        {atTop && (
+          <div className="w-full bg-gray-50 border-b border-gray-200 transition-all duration-300">
+            <div className="max-w-7xl mx-auto flex flex-col items-center justify-center px-4 py-2 text-xs text-gray-700 md:flex-row md:justify-between md:items-center">
+              <div className="flex flex-row justify-between w-full md:w-auto md:flex-row md:items-center md:gap-3">
+                <a href="tel:+233243623269" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors">
+                  <Phone className="w-4 h-4" /> +233 24 362 3269
+                </a>
+                <a href="mailto:info@eloloagbleke.com" className="flex items-center gap-1 hover:text-orange-600 font-medium transition-colors">
+                  <Mail className="w-4 h-4" /> info@eloloagbleke.com
+                </a>
+              </div>
+              <div className="hidden md:flex items-center gap-2 mt-2 md:mt-0">
+                <a href="https://web.facebook.com/EldChapEl" target="_blank" rel="noopener noreferrer" title="Facebook" className="hover:scale-110 transition-transform">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style={{ width: 20, height: 20 }} />
+                </a>
+                <a href="https://x.com/elolo2000?s=11" target="_blank" rel="noopener noreferrer" title="X" className="hover:scale-110 transition-transform">
+                  <img src="https://cdn.simpleicons.org/x/000000" alt="X" style={{ width: 14, height: 14 }} />
+                </a>
+                <a href="https://www.youtube.com/@eloloagbleke746" target="_blank" rel="noopener noreferrer" title="YouTube" className="hover:scale-110 transition-transform">
+                  <img src="https://cdn.simpleicons.org/youtube/ff0000" alt="YouTube" style={{ width: 20, height: 20 }} />
+                </a>
+                <a href="https://gh.linkedin.com/in/elolo-kwabla-magnus-agbleke-69693b2b" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="hover:scale-110 transition-transform">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style={{ width: 14, height: 14 }} />
+                </a>
+                <a href="https://wa.me/233243623269" target="_blank" rel="noopener noreferrer" title="WhatsApp" className="hover:scale-110 transition-transform">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: 20, height: 20 }} />
+                </a>
+                <a href="https://t.me/EldChapEl" target="_blank" rel="noopener noreferrer" title="Telegram" className="hover:scale-110 transition-transform">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style={{ width: 14, height: 14 }} />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        )}
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -118,7 +135,7 @@ const Navigation = ({ currentPage = '', onPageChange = () => {} }) => {
             >
               <div className="relative h-16 w-56">
                 <Image
-                  src="/logo.png"
+                  src="/logo3.png"
                   alt="Elolo Agbleke logo"
                   fill
                   sizes="160px"

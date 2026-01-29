@@ -1,3 +1,28 @@
+/* Shrink nav bar when scrolling up */
+.nav-shrink .h-20 {
+  height: 3.5rem !important;
+}
+.nav-shrink .h-16 {
+  height: 2.5rem !important;
+}
+.nav-shrink .w-56 {
+  width: 8rem !important;
+}
+.nav-shrink .w-48 {
+  width: 6rem !important;
+}
+.nav-shrink .py-2.5 {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+.nav-shrink .py-3 {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+.nav-shrink .px-6 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
 /* Utility class for Onest font */
 .font-onest {
   font-family: 'Onest', Arial, sans-serif;
