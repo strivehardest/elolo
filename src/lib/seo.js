@@ -1,9 +1,9 @@
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eloloagbleke.com';
-const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Elolo Agbleke - Building TVET Systems';
+const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Elolo Agbleke';
 const siteDescription = process.env.NEXT_PUBLIC_SITE_DESCRIPTION || 'Building TVET systems, fostering growth, and creating meaningful relationships through shared experiences and knowledge.';
 
 export const defaultSEO = {
-  title: `${siteName} | Building TVET Systems`,
+  title: `${siteName} – Building TVET Systems`,
   description: siteDescription,
   canonical: siteUrl,
   openGraph: {
@@ -11,7 +11,7 @@ export const defaultSEO = {
     locale: 'en_US',
     url: siteUrl,
     site_name: siteName,
-    title: `${siteName} | Building TVET Systems`,
+    title: `${siteName} – Building TVET Systems`,
     description: siteDescription,
     images: [
       {
