@@ -149,7 +149,8 @@ const HomePage = () => {
             <div className="max-w-5xl mx-auto mt-40 md:mt-56">
               {/* Main Tagline */}
               <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-white leading-tight mb-8 tracking-tight">
-                Building Practical Skills Systems for TVET through Technology, Design, and Capacity Building
+                Building Practical Skills Systems for TVET through Technology,{' '}
+                <span style={{ whiteSpace: 'nowrap' }}>Design, and Capacity Building</span>
               </h1>
               {/* Learn More CTA Button - moved below tagline */}
               <div className="w-full max-w-xs sm:max-w-none mx-auto flex justify-center mt-8">

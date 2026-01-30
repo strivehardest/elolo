@@ -1,9 +1,9 @@
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eloloagbleke.com';
-const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Elolo Agbleke Community';
-const siteDescription = process.env.NEXT_PUBLIC_SITE_DESCRIPTION || 'Building connections, fostering growth, and creating meaningful relationships through shared experiences and knowledge.';
+const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Elolo Agbleke - Building TVET Systems';
+const siteDescription = process.env.NEXT_PUBLIC_SITE_DESCRIPTION || 'Building TVET systems, fostering growth, and creating meaningful relationships through shared experiences and knowledge.';
 
 export const defaultSEO = {
-  title: `${siteName} | Community Building & Professional Development`,
+  title: `${siteName} | Building TVET Systems`,
   description: siteDescription,
   canonical: siteUrl,
   openGraph: {
@@ -11,14 +11,44 @@ export const defaultSEO = {
     locale: 'en_US',
     url: siteUrl,
     site_name: siteName,
-    title: `${siteName} | Community Building & Professional Development`,
+    title: `${siteName} | Building TVET Systems`,
     description: siteDescription,
     images: [
       {
         url: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: `${siteName} - Community Building Platform`,
+        alt: `${siteName} - Building TVET Systems`,
+      },
+    ],
+    profile: {
+      firstName: 'Elolo',
+      lastName: 'Agbleke',
+    },
+    social: [
+      {
+        label: 'Facebook',
+        url: 'https://web.facebook.com/EldChapEl',
+      },
+      {
+        label: 'X',
+        url: 'https://x.com/elolo2000?s=11',
+      },
+      {
+        label: 'YouTube',
+        url: 'https://www.youtube.com/@eloloagbleke746',
+      },
+      {
+        label: 'LinkedIn',
+        url: 'https://gh.linkedin.com/in/elolo-kwabla-magnus-agbleke-69693b2b',
+      },
+      {
+        label: 'WhatsApp',
+        url: 'https://wa.me/233243623269',
+      },
+      {
+        label: 'Telegram',
+        url: 'https://t.me/EldChapEl',
       },
     ],
   },
@@ -194,7 +224,7 @@ export const generateOrganizationSchema = () => {
     },
     sameAs: [
       'https://facebook.com/eloloagbleke',
-      'https://li'
+      'https://lik'
       // 'https://linkedin.com/in/eloloagbleke',
       // 'https://twitter.com/eloloagbleke',
     ],

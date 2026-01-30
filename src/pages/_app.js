@@ -38,10 +38,6 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {/* Favicon and SEO */}
-      <Head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
-      </Head>
       <DefaultSeo {...defaultSEO} />
       <Layout>
         <Component {...pageProps} />

@@ -13,7 +13,9 @@ export default function Document() {
         />
 
         {/* ✅ Favicon and App Icons */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
 
         {/* ✅ Web App Manifest */}
         <link rel="manifest" href="/manifest.json" />

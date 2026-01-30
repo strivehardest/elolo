@@ -95,11 +95,11 @@ const AboutPage = () => {
       
       <div className="bg-white min-h-screen">
         {/* Hero Section */}
-        <div className="relative h-[340px] md:h-[420px] w-full flex items-center justify-center overflow-hidden">
+        <div className="relative h-[200px] md:h-[260px] w-full flex items-center justify-center overflow-hidden">
           <img
-            src="./images/about/elolo-portrait.jpg"
+            src="/images/about/hero1.png"
             alt="Training, technology, or speaking event"
-            className="absolute inset-0 w-full h-full object-cover object-center z-0"
+            className="absolute inset-0 w-full h-full object-contain object-center z-0 bg-black"
             style={{ filter: 'brightness(0.65)' }}
           />
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
