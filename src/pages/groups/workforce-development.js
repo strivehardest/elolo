@@ -69,9 +69,17 @@ const WorkforceDevelopmentPage = () => {
         </button>
       )}
       {/* Hero Section */}
-      <div className="relative bg-[#df8125] text-white">
-        <div className="absolute inset-0 bg-black/5"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div className="relative bg-[#df8125] text-white overflow-hidden">
+        <Image
+          src="/groups/group.jpg"
+          alt="Groups Hero Background"
+          fill
+          style={{ objectFit: 'cover', objectPosition: 'center', zIndex: 0 }}
+          className="absolute inset-0 w-full h-full opacity-60"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-10">
           <div className="flex flex-col items-center justify-center text-center gap-10 md:gap-16">
             <div className="w-32 h-32 md:w-40 md:h-40 bg-white rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden p-4 mx-auto">
               <Image

@@ -97,7 +97,7 @@ const AboutPage = () => {
         {/* Hero Section */}
         <div className="relative h-[200px] md:h-[260px] w-full flex items-center justify-center overflow-hidden">
           <img
-            src="/images/about/hero1.png"
+            src="/images/about/about.jpg"
             alt="Training, technology, or speaking event"
             className="absolute inset-0 w-full h-full object-contain object-center z-0 bg-black"
             style={{ filter: 'brightness(0.65)' }}

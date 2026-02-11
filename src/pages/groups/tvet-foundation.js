@@ -52,9 +52,17 @@ const TVETFoundationPage = () => {
       )}
 
       {/* Hero Section */}
-      <div className="relative bg-[#df8125] text-white">
-        <div className="absolute inset-0 bg-black/5"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div className="relative bg-[#df8125] text-white overflow-hidden">
+        <Image
+          src="/groups/group.jpg"
+          alt="Groups Hero Background"
+          fill
+          style={{ objectFit: 'cover', objectPosition: 'center', zIndex: 0 }}
+          className="absolute inset-0 w-full h-full opacity-60"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-10">
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
             <div className="w-32 h-32 md:w-40 md:h-40 bg-white rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden p-4">
               <Image
@@ -72,7 +80,7 @@ const TVETFoundationPage = () => {
               <p className="text-xl md:text-2xl text-white/95 max-w-3xl leading-relaxed font-medium mb-3">
                 Foundation - Policy and Perception
               </p>
-              <p className="text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed">
+              <p className="text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed mb-6">
                 A system-level enabler and advocate for TVET transformation in Ghana
               </p>
             </div>

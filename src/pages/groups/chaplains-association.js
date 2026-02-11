@@ -65,9 +65,17 @@ const ChaplainsAssociationPage = () => {
         </button>
       )}
       {/* Hero Section */}
-      <div className="relative bg-[#df8125] text-white">
-        <div className="absolute inset-0 bg-black/5"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div className="relative bg-[#df8125] text-white overflow-hidden">
+        <Image
+          src="/groups/group.jpg"
+          alt="Groups Hero Background"
+          fill
+          style={{ objectFit: 'cover', objectPosition: 'center', zIndex: 0 }}
+          className="absolute inset-0 w-full h-full opacity-60"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 z-10">
           <div className="flex flex-col items-center text-center gap-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 tracking-tight">
               ASSOCIATION OF CHAPLAINS IN EDUCATION (ACE)
