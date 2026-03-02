@@ -10,6 +10,7 @@ export default function Custom404() {
         title="404 - Page Not Found"
         description="The page you are looking for could not be found. Return to homepage or explore other sections."
         canonical="/404"
+        noindex
       />
 
       <div className="min-h-screen bg-gradient-to-br from-[#fefefd] to-[#f5f5f4] flex items-center justify-center px-4 py-16">

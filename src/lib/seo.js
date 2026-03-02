@@ -223,10 +223,12 @@ export const generateOrganizationSchema = () => {
       availableLanguage: 'English',
     },
     sameAs: [
-      'https://facebook.com/eloloagbleke',
-      'https://lik'
-      // 'https://linkedin.com/in/eloloagbleke',
-      // 'https://twitter.com/eloloagbleke',
+      'https://web.facebook.com/EldChapEl',
+      'https://x.com/elolo2000?s=11',
+      'https://www.youtube.com/@eloloagbleke746',
+      'https://gh.linkedin.com/in/elolo-kwabla-magnus-agbleke-69693b2b',
+      'https://wa.me/233243623269',
+      'https://t.me/EldChapEl',
     ],
   };
 };

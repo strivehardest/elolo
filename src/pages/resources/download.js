@@ -6,10 +6,14 @@ export default function DownloadsPage() {
   return (
     <>
       <SEOHead
-        title={pagesSEO.resources.title}
-        description={pagesSEO.resources.description}
-        canonical={pagesSEO.resources.canonical}
-        openGraph={pagesSEO.resources.openGraph}
+        title="Downloads | TVET Resources & Media"
+        description="Access curated TVET resources and media downloads from Elolo Agbleke, including audio and learning materials for professional growth."
+        canonical="https://eloloagbleke.com/resources/download"
+        openGraph={{
+          title: 'Downloads | TVET Resources & Media',
+          description: 'Access curated TVET resources and media downloads from Elolo Agbleke, including audio and learning materials for professional growth.',
+          url: 'https://eloloagbleke.com/resources/download',
+        }}
         additionalMetaTags={[{
           name: 'keywords',
           content: 'Elolo Agbleke, resources, documents, downloads, TVET, Ghana, professional development, community'
