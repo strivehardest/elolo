@@ -3,7 +3,6 @@ Allow: /
 
 # Block access to sensitive and non-public areas
 Disallow: /admin/
-Disallow: /_next/
 Disallow: /api/auth/
 Disallow: /dashboard/
 
