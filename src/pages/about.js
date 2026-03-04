@@ -95,7 +95,7 @@ const AboutPage = () => {
       
       <div className="bg-white min-h-screen">
         {/* Hero Section */}
-        <div className="relative h-[200px] md:h-[260px] w-full flex items-center justify-center overflow-hidden">
+        <div className="relative h-[300px] md:h-[260px] w-full flex items-center justify-center overflow-hidden">
           <img
             src="/images/about/about.jpg"
             alt="Training, technology, or speaking event"
@@ -103,9 +103,9 @@ const AboutPage = () => {
             style={{ filter: 'brightness(0.65)' }}
           />
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">About Elolo Agbleke</h1>
-            <div className="w-24 h-1 mx-auto mb-8 bg-white opacity-80"></div>
-            <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed text-white drop-shadow">
+            <h1 className="text-3xl md:text-6xl font-bold mb-3 md:mb-6 text-white drop-shadow-lg">About Elolo Agbleke</h1>
+            <div className="w-24 h-1 mx-auto mb-4 md:mb-8 bg-white opacity-80"></div>
+            <p className="text-lg md:text-2xl max-w-4xl mx-auto leading-relaxed text-white drop-shadow">
               Transforming Lives Through TVET, Digital Innovation & Faith-Based Leadership
             </p>
           </div>
