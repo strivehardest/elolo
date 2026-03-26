@@ -32,11 +32,11 @@ export default function LinksPage() {
 			<SEOHead
 				title="Useful Links | TVET, Education & Skills Resources"
 				description="Browse a curated list of useful links for TVET, education, skills development, and professional resources in Ghana and beyond."
-				canonical="https://eloloagbleke.com/resources/links"
+				canonical="https://www.eloloagbleke.com/resources/links"
 				openGraph={{
 					title: "Useful Links | TVET, Education & Skills Resources",
 					description: "Browse a curated list of useful links for TVET, education, skills development, and professional resources in Ghana and beyond.",
-					url: "https://eloloagbleke.com/resources/links"
+					url: "https://www.eloloagbleke.com/resources/links"
 				}}
 				additionalMetaTags={[{
 					name: 'keywords',

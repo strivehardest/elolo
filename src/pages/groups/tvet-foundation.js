@@ -28,7 +28,7 @@ const TVETFoundationPage = () => {
       <SEOHead
         title="TVET Foundation Ghana | Digital Learning & Institutional Support"
         description="Discover the TVET Foundation: supporting digital TVET, content development, and institutional growth across Ghana and West Africa."
-        canonical="https://eloloagbleke.com/groups/tvet-foundation"
+        canonical="https://www.eloloagbleke.com/groups/tvet-foundation"
         openGraph={{
           title: "TVET Foundation Ghana | Digital Learning & Institutional Support",
           description: "Discover the TVET Foundation: supporting digital TVET, content development, and institutional growth across Ghana and West Africa.",

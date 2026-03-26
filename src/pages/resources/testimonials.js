@@ -50,11 +50,11 @@ export default function TestimonialsPage() {
         <SEOHead
           title="Testimonials | TVET Training & Community Impact Reviews"
           description="Read testimonials and reviews from institutions, partners, and participants about Elolo Agbleke's TVET training, EdTech, and community impact."
-          canonical="https://eloloagbleke.com/resources/testimonials"
+          canonical="https://www.eloloagbleke.com/resources/testimonials"
           openGraph={{
             title: "Testimonials | TVET Training & Community Impact Reviews",
             description: "Read testimonials and reviews from institutions, partners, and participants about Elolo Agbleke's TVET training, EdTech, and community impact.",
-            url: "https://eloloagbleke.com/resources/testimonials"
+            url: "https://www.eloloagbleke.com/resources/testimonials"
           }}
           additionalMetaTags={[{
             name: 'keywords',

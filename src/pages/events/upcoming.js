@@ -48,7 +48,7 @@ export default function UpcomingEvents() {
       <SEOHead
         title="Upcoming Events | TVET Conferences, Workshops & Networking"
         description="See upcoming TVET events, conferences, workshops, and networking opportunities hosted by Elolo Agbleke."
-        canonical="https://eloloagbleke.com/events/upcoming"
+        canonical="https://www.eloloagbleke.com/events/upcoming"
         openGraph={{
           title: "Upcoming Events | TVET Conferences, Workshops & Networking",
           description: "See upcoming TVET events, conferences, workshops, and networking opportunities hosted by Elolo Agbleke.",

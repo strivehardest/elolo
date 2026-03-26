@@ -7,11 +7,11 @@ export default function Workshops() {
 			<SEOHead
 				title="Workshops | TVET Training & Professional Development Events"
 				description="Browse upcoming and past TVET workshops, hands-on training, and professional development events by Elolo Agbleke."
-				canonical="https://eloloagbleke.com/events/workshops"
+				canonical="https://www.eloloagbleke.com/events/workshops"
 				openGraph={{
 					title: "Workshops | TVET Training & Professional Development Events",
 					description: "Browse upcoming and past TVET workshops, hands-on training, and professional development events by Elolo Agbleke.",
-					url: "https://eloloagbleke.com/events/workshops"
+					url: "https://www.eloloagbleke.com/events/workshops"
 				}}
 				additionalMetaTags={[{
 					name: 'keywords',

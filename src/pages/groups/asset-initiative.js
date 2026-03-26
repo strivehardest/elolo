@@ -44,11 +44,11 @@ const ASSETInitiativePage = () => {
       <SEOHead
         title="ASSET Initiative | Digital TVET Innovation & Partnerships"
         description="Discover the ASSET Initiative: advancing digital TVET, immersive learning, and technical partnerships across Ghana and West Africa. Join us in transforming skills development."
-        canonical="https://eloloagbleke.com/groups/asset-initiative"
+        canonical="https://www.eloloagbleke.com/groups/asset-initiative"
         openGraph={{
           title: "ASSET Initiative | Digital TVET Innovation & Partnerships",
           description: "Discover the ASSET Initiative: advancing digital TVET, immersive learning, and technical partnerships across Ghana and West Africa.",
-          url: "https://eloloagbleke.com/groups/asset-initiative"
+          url: "https://www.eloloagbleke.com/groups/asset-initiative"
         }}
         additionalMetaTags={[{
           name: 'keywords',

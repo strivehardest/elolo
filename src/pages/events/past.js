@@ -208,11 +208,11 @@ export default function PastEvents() {
             <SEOHead
               title="Past Events | TVET Conferences, Workshops & Networking"
               description="See past TVET events, conferences, workshops, and networking opportunities hosted by Elolo Agbleke."
-              canonical="https://eloloagbleke.com/events/past"
+              canonical="https://www.eloloagbleke.com/events/past"
               openGraph={{
                 title: "Past Events | TVET Conferences, Workshops & Networking",
                 description: "See past TVET events, conferences, workshops, and networking opportunities hosted by Elolo Agbleke.",
-                url: "https://eloloagbleke.com/events/past"
+                url: "https://www.eloloagbleke.com/events/past"
               }}
               additionalMetaTags={[{
                 name: 'keywords',

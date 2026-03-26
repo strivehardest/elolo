@@ -296,7 +296,7 @@ export default function GalleryPage() {
       <SEOHead
         title="Gallery | TVET Events & Community Highlights"
         description="View the gallery of TVET events, workshops, and community highlights from Elolo Agbleke's work in Ghana."
-        canonical="https://eloloagbleke.com/resources/gallery"
+        canonical="https://www.eloloagbleke.com/resources/gallery"
       />
       
       <div className="min-h-screen bg-white">

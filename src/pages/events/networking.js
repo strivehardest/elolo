@@ -7,11 +7,11 @@ export default function NetworkingEvents() {
 			<SEOHead
 				title="Networking Events | TVET Community & Professional Connections"
 				description="Join TVET networking events and connect with professionals, educators, and industry leaders in Ghana."
-				canonical="https://eloloagbleke.com/events/networking"
+				canonical="https://www.eloloagbleke.com/events/networking"
 				openGraph={{
 					title: "Networking Events | TVET Community & Professional Connections",
 					description: "Join TVET networking events and connect with professionals, educators, and industry leaders in Ghana.",
-					url: "https://eloloagbleke.com/events/networking"
+					url: "https://www.eloloagbleke.com/events/networking"
 				}}
 				additionalMetaTags={[{
 					name: 'keywords',

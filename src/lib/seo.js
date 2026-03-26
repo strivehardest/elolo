@@ -1,4 +1,4 @@
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eloloagbleke.com';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.eloloagbleke.com';
 const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Elolo Agbleke';
 const siteDescription = process.env.NEXT_PUBLIC_SITE_DESCRIPTION || 'Building TVET systems, fostering growth, and creating meaningful relationships through shared experiences and knowledge.';
 

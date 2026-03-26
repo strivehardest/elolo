@@ -42,11 +42,11 @@ export default function FAQsPage() {
       <SEOHead
         title="FAQs | TVET Community Questions & Answers"
         description="Find answers to frequently asked questions about Elolo Agbleke, TVET innovation, events, and community resources."
-        canonical="https://eloloagbleke.com/resources/faqs"
+        canonical="https://www.eloloagbleke.com/resources/faqs"
         openGraph={{
           title: "FAQs | TVET Community Questions & Answers",
           description: "Find answers to frequently asked questions about Elolo Agbleke, TVET innovation, events, and community resources.",
-          url: "https://eloloagbleke.com/resources/faqs"
+          url: "https://www.eloloagbleke.com/resources/faqs"
         }}
         additionalMetaTags={[{
           name: 'keywords',

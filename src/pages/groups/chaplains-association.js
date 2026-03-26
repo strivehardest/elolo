@@ -42,7 +42,7 @@ const ChaplainsAssociationPage = () => {
       <SEOHead
         title="Chaplains Association | Spiritual Care in Education (Ghana)"
         description="Learn about the Chaplains Association: providing spiritual guidance, pastoral care, and holistic support to students and educators across Ghana."
-        canonical="https://eloloagbleke.com/groups/chaplains-association"
+        canonical="https://www.eloloagbleke.com/groups/chaplains-association"
         openGraph={{
           title: "Chaplains Association | Spiritual Care in Education (Ghana)",
           description: "Learn about the Chaplains Association: providing spiritual guidance, pastoral care, and holistic support to students and educators across Ghana.",

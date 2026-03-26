@@ -7,7 +7,7 @@ export default function Conferences() {
 			<SEOHead
 				title="Conferences | TVET Leadership & Innovation Forums"
 				description="Attend TVET conferences and forums on leadership, innovation, and skills development in Ghana and Africa."
-				canonical="https://eloloagbleke.com/events/conferences"
+				canonical="https://www.eloloagbleke.com/events/conferences"
 				openGraph={{
 					title: "Conferences | TVET Leadership & Innovation Forums",
 					description: "Attend TVET conferences and forums on leadership, innovation, and skills development in Ghana and Africa.",

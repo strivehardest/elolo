@@ -46,11 +46,11 @@ const WorkforceDevelopmentPage = () => {
       <SEOHead
         title="Workforce Development | TVET Staff Training & Certification"
         description="Explore Workforce Development: CPD, staff training, leadership, and certification for TVET professionals in Ghana. Empowering educators and institutions."
-        canonical="https://eloloagbleke.com/groups/workforce-development"
+        canonical="https://www.eloloagbleke.com/groups/workforce-development"
         openGraph={{
           title: "Workforce Development | TVET Staff Training & Certification",
           description: "Explore Workforce Development: CPD, staff training, leadership, and certification for TVET professionals in Ghana.",
-          url: "https://eloloagbleke.com/groups/workforce-development"
+          url: "https://www.eloloagbleke.com/groups/workforce-development"
         }}
         additionalMetaTags={[{
           name: 'keywords',

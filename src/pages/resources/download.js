@@ -8,7 +8,7 @@ export default function DownloadsPage() {
       <SEOHead
         title="Downloads | TVET Resources & Media"
         description="Access curated TVET resources and media downloads from Elolo Agbleke, including audio and learning materials for professional growth."
-        canonical="https://eloloagbleke.com/resources/download"
+        canonical="https://www.eloloagbleke.com/resources/download"
         openGraph={{
           title: 'Downloads | TVET Resources & Media',
           description: 'Access curated TVET resources and media downloads from Elolo Agbleke, including audio and learning materials for professional growth.',
